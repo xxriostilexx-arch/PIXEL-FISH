@@ -142,7 +142,7 @@ button.red {
 
 /* Side Buttons (Meu Aquario & Oficina) */
 .pool-home .pool-aquarium-toggle {
-  bottom: calc(env(safe-area-inset-bottom, 34px) + 260px) !important;
+  bottom: calc(env(safe-area-inset-bottom, 34px) + 290px) !important;
   background: var(--xp-surface) !important;
   border: 1px solid var(--xp-gold) !important;
   border-radius: 12px !important;
@@ -152,9 +152,10 @@ button.red {
   flex-direction: column !important;
   justify-content: center !important;
   align-items: center !important;
+  font-size: 24px !important;
 }
 .pool-home .pool-tools-toggle {
-  bottom: calc(env(safe-area-inset-bottom, 34px) + 180px) !important;
+  bottom: calc(env(safe-area-inset-bottom, 34px) + 210px) !important;
   background: var(--xp-surface) !important;
   border: 1px solid var(--xp-gold-dark) !important;
   border-radius: 12px !important;
@@ -165,6 +166,14 @@ button.red {
   justify-content: center !important;
   align-items: center !important;
   margin-bottom: 0 !important;
+  font-size: 24px !important;
+}
+.pool-home .pool-aquarium-toggle small,
+.pool-home .pool-tools-toggle small {
+  font-size: 10px !important;
+  font-weight: 600 !important;
+  color: #c0c0c0 !important; /* Prata */
+  margin-top: 4px !important;
 }
 
 /* Cards & Modals */
