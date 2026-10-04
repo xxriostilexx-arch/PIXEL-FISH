@@ -237,9 +237,9 @@ function Intro({ onEnter }: { onEnter: () => void }) {
       <section className="intro-card">
         <small className="intro-eyebrow">PASSIVE EARN</small>
         <img
-          src="/assets/diver.png"
-          alt="Mergulhador"
-          className="intro-mascot"
+          src="/assets/cash.jpg"
+          alt="Nota Pixel Fish"
+          className="intro-note"
         />
         <h1 className="intro-title">
           PIXEL <span>FISH</span>
