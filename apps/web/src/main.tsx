@@ -18,7 +18,7 @@ const fmt=(n:number)=>n.toLocaleString('pt-BR',{maximumFractionDigits:2});
 const fishAsset=(fish:{rarity:R;id?:string;name?:string})=>{const seed=[...(fish.id??fish.name??'fish')].reduce((sum,char)=>sum+char.charCodeAt(0),0);const pick=(items:string[])=>items[seed%items.length];if(fish.rarity==='Comum')return pick(['/assets/fish-common-01.png','/assets/fish-common-02.png','/assets/fish-common-03.png']);if(fish.rarity==='Raro')return pick(['/assets/fish-rare-01.png','/assets/fish-rare-02.png']);if(fish.rarity==='Épico')return pick(['/assets/fish-epic-01.png','/assets/fish-epic-02.png']);return pick(['/assets/fish-legendary-01.png','/assets/fish-legendary-02.png'])};
 // Em desenvolvimento local usa localhost:8787; em produção (qualquer outro domínio) usa a API pública.
 const IS_LOCAL=window.location.hostname==='localhost'||window.location.hostname==='127.0.0.1';
-const API=IS_LOCAL?'http://localhost:8787':'https://api.pixelfish.app';
+const API=IS_LOCAL?'http://localhost:8787':'https://pixel-fish-api.onrender.com';
 type TelegramWebApp={initData?:string;ready?:()=>void;expand?:()=>void;requestFullscreen?:()=>void;isVersionAtLeast?:(version:string)=>boolean};
 const rawFetch=window.fetch.bind(window);let sessionToken='';
 const apiFetch:typeof window.fetch=async(input,init={})=>{const requestUrl=typeof input==='string'?input:input instanceof URL?input.toString():input.url;if(requestUrl.startsWith(API)&&sessionToken&&!requestUrl.endsWith('/auth/telegram')){const headers=new Headers(init.headers);headers.set('Authorization',`Bearer ${sessionToken}`);return rawFetch(input,{...init,headers})}return rawFetch(input,init)};
