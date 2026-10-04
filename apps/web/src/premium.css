@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
 
 /* ============================================================
-   PIXEL FISH — PREMIUM LAYOUT v4
-   Tema: XP Investimentos / Corretora Profissional
+   PIXEL FISH — PREMIUM v5
+   Corretora Profissional · Passive Earn
    ============================================================ */
 
 :root {
@@ -17,9 +17,6 @@
   --xp-border: #2a2e40;
   --xp-green: #00d27a;
   --xp-red: #f33535;
-  --xp-dock-h: 72px; /* dock visible height */
-  --xp-footer-h: 76px; /* pool-footer height */
-  --xp-safe: env(safe-area-inset-bottom, 20px);
 }
 
 /* ── Typography ──────────────────────────────────────────── */
@@ -39,38 +36,27 @@ small { color: var(--xp-muted) !important; }
   font-weight: 600 !important;
 }
 
-/* ── App Shell: tela cheia ───────────────────────────────── */
-html, body, #root { height: 100% !important; overflow: hidden !important; }
-
-.app-shell {
-  /* deixa o fundo do reef (ocean) aparecer atrás de tudo */
-  padding: 0 !important;
-  box-sizing: border-box !important;
-}
-
-/* ── Fundo oceano: semitransparente por cima da foto ─────── */
-.reef-bg {
-  background: linear-gradient(
-    180deg,
-    rgba(13,15,18,0.55) 0%,
-    rgba(13,15,18,0.20) 40%,
-    rgba(13,15,18,0.60) 100%
-  ) !important;
+/* ── Tela cheia: ocultar barra do Telegram via CSS ───────── */
+html, body, #root {
+  height: 100% !important;
+  overflow: hidden !important;
 }
 
 /* ── Status Bar (FISH / CASH) ────────────────────────────── */
 .status {
-  background: rgba(22, 25, 32, 0.85) !important;
+  background: rgba(16, 18, 26, 0.90) !important;
   backdrop-filter: blur(16px) !important;
-  border: 1px solid var(--xp-border) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  border: 1px solid var(--xp-gold) !important;
   border-top: none !important;
   border-radius: 0 0 16px 16px !important;
   color: var(--xp-text) !important;
   font-weight: 700 !important;
   font-size: 14px !important;
   padding: 14px 20px !important;
-  margin: 0 8px !important;
+  margin: 0 8px 8px !important;
   justify-content: space-between !important;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4) !important;
 }
 .status i { border-left: 1px solid var(--xp-border) !important; }
 
@@ -96,163 +82,127 @@ button.blue, .wide.blue {
 button.red { background: var(--xp-red) !important; color: #fff !important; }
 
 /* ── DOCK (barra de navegação) ───────────────────────────── */
-/*
-   A dock usa position:fixed;bottom:0 no styles.css original.
-   Aqui só sobrescrevemos visual + padding para safe area.
-*/
 .dock {
-  background: rgba(16, 18, 26, 0.96) !important;
+  background: rgba(14, 16, 22, 0.97) !important;
   backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
   border-top: 1px solid var(--xp-border) !important;
   border-radius: 20px 20px 0 0 !important;
-  /* empurra o conteúdo acima da home indicator do iPhone */
-  padding-bottom: calc(var(--xp-safe) + 8px) !important;
-  padding-top: 10px !important;
-  /* z-index alto para ficar sempre acima */
   z-index: 200 !important;
-  /* reset altura para o conteúdo determinar */
-  height: auto !important;
-  min-height: auto !important;
+  box-shadow: none !important;
 }
 .dock button {
   background: transparent !important;
   color: var(--xp-muted) !important;
   font-size: 9px !important;
   font-weight: 600 !important;
-  letter-spacing: 0.5px !important;
-  padding: 6px 4px !important;
-  border-radius: 10px !important;
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-  gap: 4px !important;
-  transition: color 0.15s !important;
-}
-.dock .current {
-  color: var(--xp-gold) !important;
-  background: rgba(255,194,0,0.08) !important;
-  border-radius: 10px !important;
-}
-.dock em {
-  font-size: 22px !important;
-  line-height: 1 !important;
-  margin: 0 !important;
-}
-
-/* ── Pool: galeria e posicionamento ─────────────────────── */
-.pool-home {
-  /* pool-home ocupa do status bar até o topo da dock         */
-  /* o styles.css calcula height:calc(100dvh - 79px) — ok    */
-  display: flex !important;
-  flex-direction: column !important;
-}
-
-.pool-gallery {
-  flex: 1 !important;
-  background: transparent !important;
-  border: none !important;
+  letter-spacing: 0.3px !important;
   box-shadow: none !important;
-  /* remove imagem interna dos peixes decorativos */
-  min-height: 0 !important;
 }
-.pool-gallery::before, .pool-gallery::after, .pool-depth { display: none !important; }
+.dock .current { color: var(--xp-gold) !important; }
+.dock .current em { filter: none !important; }
+.dock em { font-size: 22px !important; }
 
-/* ── Pool Footer (Rendimento + Recolher) ────────────────── */
-/*
-   No styles.css é position:fixed; bottom: DOCK_HEIGHT.
-   Garantimos que fique acima da dock com folga.
-*/
-.pool-footer {
-  background: rgba(22, 25, 32, 0.92) !important;
+/* ── Pool Footer: ACIMA da dock ─────────────────────────── */
+/* styles.css define bottom:64px em mobile, dock tem ~61px de altura.
+   Precisamos de bottom maior que a dock para não sobrepor. */
+.pool-home .pool-footer {
+  bottom: 68px !important;
+  background: rgba(16, 18, 26, 0.95) !important;
   backdrop-filter: blur(16px) !important;
-  border: 1px solid var(--xp-border) !important;
-  border-radius: 16px 16px 0 0 !important;
-  /* fixed: dock height + safe area */
-  bottom: calc(var(--xp-dock-h) + var(--xp-safe)) !important;
-  left: 0 !important;
-  right: 0 !important;
-  z-index: 110 !important;
-  padding: 14px 16px !important;
+  border: none !important;
+  border-top: 1px solid var(--xp-border) !important;
+  border-radius: 0 !important;
+  z-index: 150 !important;
+  padding: 12px 16px !important;
   height: auto !important;
   min-height: auto !important;
   margin: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
   display: flex !important;
   align-items: center !important;
   justify-content: space-between !important;
   gap: 12px !important;
 }
-.pool-footer b { color: var(--xp-gold) !important; font-size: 18px !important; font-weight: 800 !important; }
-.pool-footer small { font-size: 10px !important; }
-.pool-footer button {
+.pool-home .pool-footer b {
+  color: var(--xp-gold) !important;
+  font-size: 17px !important;
+  font-weight: 800 !important;
+}
+.pool-home .pool-footer small { font-size: 9px !important; }
+.pool-home .pool-footer button {
   background: var(--xp-gold) !important;
   color: #000 !important;
   font-weight: 800 !important;
-  font-size: 12px !important;
-  padding: 12px 18px !important;
+  font-size: 11px !important;
+  padding: 10px 16px !important;
   border-radius: 10px !important;
   white-space: nowrap !important;
   flex-shrink: 0 !important;
 }
-.pool-footer button:disabled {
-  opacity: 0.4 !important;
-}
+.pool-home .pool-footer button:disabled { opacity: 0.4 !important; }
 
-.pool-open {
-  background: var(--xp-gold) !important;
-  color: #000 !important;
-  font-weight: 700 !important;
-}
-
-/* ── Botões Laterais (Aquário / Oficina) ─────────────────── */
-/*
-   Ficam empilhados na esquerda, acima do pool-footer.
-   pool-footer height ≈ 60px; dock height ≈ 72px
-   → safe stack: bottom = dock + footer + 12px gap + (idx * 82px)
-*/
-.pool-aquarium-toggle,
-.pool-tools-toggle {
-  position: fixed !important;
+/* ── Botão Aquário: acima do footer ─────────────────────── */
+/* styles.css: bottom:203px mobile. Footer height ~54px + dock 68px = 122px
+   Deixamos em 235px para garantir espaço */
+.pool-aquarium-toggle {
+  bottom: 230px !important;
   left: 10px !important;
   width: 68px !important;
   height: 68px !important;
-  background: rgba(22, 25, 32, 0.92) !important;
+  min-width: 68px !important;
+  background: rgba(16, 18, 26, 0.95) !important;
   backdrop-filter: blur(16px) !important;
+  border: 1px solid var(--xp-gold) !important;
   border-radius: 14px !important;
-  border: 1px solid var(--xp-border) !important;
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-  justify-content: center !important;
-  gap: 4px !important;
-  padding: 0 !important;
-  z-index: 120 !important;
-  box-shadow: none !important;
+  display: grid !important;
+  place-items: center !important;
+  gap: 0 !important;
+  padding: 8px 4px !important;
+  z-index: 160 !important;
+  box-shadow: 0 4px 20px rgba(255,194,0,0.1) !important;
 }
-.pool-aquarium-toggle {
-  /* índice 1: acima do tools */
-  bottom: calc(var(--xp-dock-h) + var(--xp-safe) + 68px + 12px + 68px + 12px) !important;
-  border-color: var(--xp-gold) !important;
-}
-.pool-tools-toggle {
-  /* índice 0: logo acima do footer */
-  bottom: calc(var(--xp-dock-h) + var(--xp-safe) + 68px + 12px) !important;
-  border-color: var(--xp-gold-dark) !important;
-}
-.pool-aquarium-toggle span,
-.pool-tools-toggle span,
-.pool-aquarium-toggle em,
-.pool-tools-toggle em {
-  font-size: 26px !important;
-  line-height: 1 !important;
-}
-.pool-aquarium-toggle small,
-.pool-tools-toggle small {
-  font-size: 9px !important;
+.pool-aquarium-toggle small {
+  font-size: 8px !important;
   font-weight: 700 !important;
   color: var(--xp-silver) !important;
-  letter-spacing: 0.3px !important;
   text-align: center !important;
   line-height: 1.2 !important;
+}
+
+/* ── Botão Oficina: logo abaixo do Aquário ───────────────── */
+/* styles.css: bottom:133-154px mobile. Logo acima do footer. */
+.pool-tools-toggle {
+  bottom: 150px !important;
+  left: 10px !important;
+  width: 68px !important;
+  height: 68px !important;
+  min-width: 68px !important;
+  background: rgba(16, 18, 26, 0.95) !important;
+  backdrop-filter: blur(16px) !important;
+  border: 1px solid var(--xp-gold-dark) !important;
+  border-radius: 14px !important;
+  display: grid !important;
+  place-items: center !important;
+  gap: 0 !important;
+  padding: 8px 4px !important;
+  z-index: 160 !important;
+  box-shadow: none !important;
+}
+.pool-tools-toggle small {
+  font-size: 8px !important;
+  font-weight: 700 !important;
+  color: var(--xp-silver) !important;
+  text-align: center !important;
+  line-height: 1.2 !important;
+}
+
+/* Media query: telas menores (iPhones) */
+@media (max-width: 540px) {
+  .pool-home .pool-footer { bottom: 62px !important; }
+  .pool-aquarium-toggle   { bottom: 222px !important; }
+  .pool-tools-toggle      { bottom: 144px !important; }
 }
 
 /* ── Frames (modais internos) ────────────────────────────── */
@@ -275,7 +225,7 @@ button.red { background: var(--xp-red) !important; color: #fff !important; }
   padding: 0 !important;
 }
 
-/* ── Cards (Ranking, Packs etc.) ────────────────────────── */
+/* ── Cards ───────────────────────────────────────────────── */
 .pack, .rank, .ref, .exchange, .profile, .history-list article, .mission-list article {
   background: var(--xp-surface2) !important;
   border: 1px solid var(--xp-border) !important;
@@ -305,7 +255,7 @@ input:focus { outline: none !important; border-color: var(--xp-gold) !important;
 
 /* ── Overlay / Dialog ────────────────────────────────────── */
 .overlay, .page-layer {
-  background: rgba(5, 7, 13, 0.82) !important;
+  background: rgba(5, 7, 13, 0.85) !important;
   backdrop-filter: blur(14px) !important;
 }
 .dialog {
@@ -317,7 +267,7 @@ input:focus { outline: none !important; border-color: var(--xp-gold) !important;
 }
 .x { color: var(--xp-muted) !important; background: transparent !important; }
 
-/* ── Carteira ────────────────────────────────────────────── */
+/* ── Wallet ─────────────────────────────────────────────── */
 .wallet-sums b {
   background: var(--xp-surface2) !important;
   border: 1px solid var(--xp-border) !important;
@@ -343,29 +293,103 @@ input:focus { outline: none !important; border-color: var(--xp-gold) !important;
   border-radius: 12px !important;
 }
 .map-art.selected { border-color: var(--xp-gold) !important; }
-.map-art span { background: rgba(13,15,18,0.8) !important; color: var(--xp-text) !important; }
+.map-art span { background: rgba(13,15,18,0.85) !important; color: var(--xp-text) !important; }
 
-/* ── Tela Intro ──────────────────────────────────────────── */
+/* ── Pool gallery: transparente para ver o fundo ─────────── */
+.pool-gallery {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+.pool-gallery::before, .pool-gallery::after, .pool-depth { display: none !important; }
+
+/* ── TELA DE INTRO ───────────────────────────────────────── */
+.intro {
+  position: fixed !important;
+  inset: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  padding-bottom: 60px !important;
+  background: transparent !important;
+  z-index: 999 !important;
+  cursor: pointer !important;
+}
+
+/* Diver: grande, centralizado, ocupando 55% da tela */
+.intro-fish {
+  display: none !important;
+}
+.intro::before {
+  content: '' !important;
+  display: block !important;
+  position: absolute !important;
+  top: 5% !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: min(320px, 80vw) !important;
+  height: min(320px, 80vw) !important;
+  background: url('/assets/diver-mascot.png') center/contain no-repeat !important;
+  pointer-events: none !important;
+  filter: drop-shadow(0 10px 30px rgba(0,0,0,0.6)) !important;
+}
+
+/* Card inferior com PASSIVE EARN e a nota de cash */
 .intro-logo {
-  background: rgba(16, 18, 26, 0.88) !important;
+  background: rgba(16, 18, 26, 0.90) !important;
   backdrop-filter: blur(20px) !important;
-  border: 1px solid var(--xp-border) !important;
-  border-radius: 20px !important;
-  padding: 32px 40px !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border: 1px solid rgba(255,194,0,0.3) !important;
+  border-radius: 24px !important;
+  padding: 24px 28px !important;
+  text-align: center !important;
+  width: min(340px, 88vw) !important;
+  position: relative !important;
+  box-shadow: 0 -4px 40px rgba(255,194,0,0.08) !important;
 }
 .intro-logo::before {
   content: 'PASSIVE EARN' !important;
   display: block !important;
   color: var(--xp-gold) !important;
-  font-size: 12px !important;
+  font-size: 11px !important;
   letter-spacing: 5px !important;
   font-weight: 700 !important;
-  margin-bottom: 8px !important;
+  margin-bottom: 6px !important;
 }
-.intro-logo b { font-weight: 800 !important; letter-spacing: 0 !important; }
-.intro-fish { display: none !important; }
+.intro-logo::after {
+  content: 'Toque para entrar' !important;
+  display: block !important;
+  color: var(--xp-muted) !important;
+  font-size: 12px !important;
+  margin-top: 14px !important;
+  letter-spacing: 1px !important;
+  animation: pulse 2s ease-in-out infinite !important;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+.intro-logo b {
+  font-size: 32px !important;
+  font-weight: 800 !important;
+  letter-spacing: -1px !important;
+  line-height: 1.1 !important;
+  display: block !important;
+}
+.intro-logo b span { color: var(--xp-gold) !important; }
 
-/* ── Ícone Cash customizado ──────────────────────────────── */
+/* Nota de cash flutuando acima do card */
+.intro-logo .cash-note {
+  display: block !important;
+  width: min(180px, 50vw) !important;
+  height: auto !important;
+  margin: 0 auto 16px !important;
+  border-radius: 10px !important;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.5) !important;
+}
+
+/* ── Ícone Cash inline ───────────────────────────────────── */
 .inline-icon {
   height: 1.3em !important;
   width: auto !important;
