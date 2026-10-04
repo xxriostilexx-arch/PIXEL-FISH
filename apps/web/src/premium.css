@@ -248,89 +248,133 @@ input:focus { border-color: var(--xp-gold) !important; outline: none !important;
 .map-art.selected { border-color: var(--xp-gold) !important; }
 .map-art span { background: rgba(13,15,18,0.85) !important; color: var(--xp-text) !important; }
 
-/* ── TELA DE INTRO ───────────────────────────────────────── */
-.intro {
+/* ── TELA INICIAL (HOME / INTRO) ─────────────────────────── */
+.intro-screen {
+  position: relative !important;
+  width: 100vw !important;
+  height: 100dvh !important;
   display: flex !important;
   flex-direction: column !important;
   align-items: center !important;
   justify-content: flex-end !important;
-  padding-bottom: 60px !important;
-  cursor: pointer !important;
-  /* Mantém o background ocean do styles.css — não sobrescrevemos */
+  overflow: hidden !important;
+  padding: env(safe-area-inset-top, 24px) 20px calc(env(safe-area-inset-bottom, 24px) + 32px) !important;
+  z-index: 100 !important;
+  background: var(--xp-bg) !important;
 }
 
-/* Mergulhador: fica no topo da tela, grande */
-.intro-diver {
+/* O fundo submarino é provido por .reef-bg, que já tem posição fixed e z-index 0 */
+.intro-screen .reef-bg {
+  z-index: 0 !important;
+  opacity: 0.85 !important;
+}
+
+.intro-bg-diver {
   position: absolute !important;
-  top: 4% !important;
+  top: max(4%, env(safe-area-inset-top, 24px)) !important;
   left: 50% !important;
   transform: translateX(-50%) !important;
-  width: min(280px, 75vw) !important;
-  height: auto !important;
-  object-fit: contain !important;
-  filter: drop-shadow(0 12px 32px rgba(0,0,0,0.7)) !important;
+  width: min(320px, 85vw) !important;
+  height: 50vh !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  z-index: 1 !important;
   pointer-events: none !important;
-  z-index: 2 !important;
+  animation: floatDiver 6s ease-in-out infinite !important;
+}
+.intro-bg-diver img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  filter: drop-shadow(0 16px 40px rgba(0,0,0,0.6)) !important;
 }
 
-/* Card inferior */
-.intro-logo {
+@keyframes floatDiver {
+  0%, 100% { transform: translate(-50%, 0); }
+  50% { transform: translate(-50%, -15px); }
+}
+
+.intro-card {
   position: relative !important;
-  z-index: 3 !important;
-  background: rgba(14, 16, 22, 0.90) !important;
-  backdrop-filter: blur(20px) !important;
-  border: 1px solid rgba(255,194,0,0.35) !important;
-  border-radius: 24px !important;
-  padding: 20px 28px 24px !important;
-  text-align: center !important;
-  width: min(340px, 88vw) !important;
-  box-shadow: 0 -4px 40px rgba(255,194,0,0.07) !important;
+  z-index: 2 !important;
+  background: rgba(14, 16, 22, 0.95) !important;
+  backdrop-filter: blur(24px) !important;
+  border: 1px solid rgba(255,194,0,0.4) !important;
+  border-radius: 28px !important;
+  padding: 32px 24px !important;
+  width: 100% !important;
+  max-width: 400px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  box-shadow: 0 12px 48px rgba(0,0,0,0.8), inset 0 1px 1px rgba(255,255,255,0.05) !important;
+  margin-top: auto !important; /* Empurra para o final da tela */
 }
-.intro-logo::before {
-  content: 'PASSIVE EARN' !important;
-  display: block !important;
+
+.intro-eyebrow {
   color: var(--xp-gold) !important;
-  font-size: 11px !important;
-  letter-spacing: 5px !important;
-  font-weight: 700 !important;
-  margin-bottom: 12px !important;
-}
-.intro-logo::after {
-  content: 'Toque para entrar' !important;
-  display: block !important;
-  color: var(--xp-muted) !important;
   font-size: 12px !important;
-  margin-top: 14px !important;
-  letter-spacing: 1px !important;
-  animation: pfpulse 2s ease-in-out infinite !important;
-}
-@keyframes pfpulse {
-  0%,100% { opacity:1; }
-  50%      { opacity:0.35; }
+  font-weight: 800 !important;
+  letter-spacing: 4px !important;
+  text-transform: uppercase !important;
+  margin-bottom: 20px !important;
 }
 
-/* Nota de cash dentro do card */
-.intro-cash {
-  display: block !important;
-  width: min(200px, 55vw) !important;
+.intro-note {
+  width: 100% !important;
+  max-width: 260px !important;
   height: auto !important;
-  margin: 0 auto 14px !important;
-  border-radius: 10px !important;
-  box-shadow: 0 6px 24px rgba(0,0,0,0.5) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.5) !important;
+  margin-bottom: 24px !important;
+  border: 1px solid var(--xp-border) !important;
+  transition: transform 0.3s ease !important;
+}
+.intro-note:hover {
+  transform: scale(1.02) translateY(-4px) !important;
 }
 
-/* Logo PIXEL FISH */
-.intro-logo b {
-  font-size: 28px !important;
+.intro-title {
+  font-size: 36px !important;
   font-weight: 800 !important;
   letter-spacing: -1px !important;
   color: #fff !important;
-  display: block !important;
+  margin: 0 0 8px !important;
+  line-height: 1 !important;
 }
-.intro-logo b span { color: var(--xp-gold) !important; }
+.intro-title span {
+  color: var(--xp-gold) !important;
+}
 
-/* Oculta elementos antigos da intro */
-.intro-fish { display: none !important; }
+.intro-subtitle {
+  color: var(--xp-muted) !important;
+  font-size: 15px !important;
+  font-weight: 500 !important;
+  margin: 0 0 32px !important;
+  text-align: center !important;
+}
+
+.intro-enter-btn {
+  width: 100% !important;
+  background: var(--xp-gold) !important;
+  color: #000 !important;
+  font-size: 16px !important;
+  font-weight: 800 !important;
+  letter-spacing: 1px !important;
+  padding: 18px !important;
+  border-radius: 16px !important;
+  border: none !important;
+  box-shadow: 0 8px 24px rgba(255,194,0,0.25) !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+  text-transform: uppercase !important;
+  text-shadow: none !important;
+}
+.intro-enter-btn:hover, .intro-enter-btn:active {
+  transform: translateY(-2px) scale(0.98) !important;
+  box-shadow: 0 12px 32px rgba(255,194,0,0.4) !important;
+}
 
 /* ── Ícone Cash inline ───────────────────────────────────── */
 .inline-icon {
