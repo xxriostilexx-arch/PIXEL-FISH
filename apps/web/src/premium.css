@@ -1,25 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
 
 /* ============================================================
-   PIXEL FISH — PREMIUM v5
-   Corretora Profissional · Passive Earn
+   PIXEL FISH — PREMIUM v6  (minimal overrides, máxima estabilidade)
    ============================================================ */
 
 :root {
-  --xp-bg: #0d0f12;
-  --xp-surface: #161920;
+  --xp-bg:       #0d0f12;
+  --xp-surface:  #161920;
   --xp-surface2: #1e2130;
-  --xp-gold: #ffc200;
-  --xp-gold-dark: #cc9b00;
-  --xp-silver: #c0c4d0;
-  --xp-text: #f0f2ff;
-  --xp-muted: #8a8fa8;
-  --xp-border: #2a2e40;
-  --xp-green: #00d27a;
-  --xp-red: #f33535;
+  --xp-gold:     #ffc200;
+  --xp-gold-dk:  #cc9b00;
+  --xp-silver:   #c0c4d0;
+  --xp-text:     #f0f2ff;
+  --xp-muted:    #8a8fa8;
+  --xp-border:   #2a2e40;
+  --xp-green:    #00d27a;
+  --xp-red:      #f33535;
 }
 
-/* ── Typography ──────────────────────────────────────────── */
+/* ── Fonte global ────────────────────────────────────────── */
 *, *::before, *::after {
   font-family: 'Outfit', sans-serif !important;
   text-shadow: none !important;
@@ -36,17 +35,10 @@ small { color: var(--xp-muted) !important; }
   font-weight: 600 !important;
 }
 
-/* ── Tela cheia: ocultar barra do Telegram via CSS ───────── */
-html, body, #root {
-  height: 100% !important;
-  overflow: hidden !important;
-}
-
-/* ── Status Bar (FISH / CASH) ────────────────────────────── */
+/* ── Status Bar ──────────────────────────────────────────── */
 .status {
-  background: rgba(16, 18, 26, 0.90) !important;
+  background: rgba(16, 18, 26, 0.92) !important;
   backdrop-filter: blur(16px) !important;
-  -webkit-backdrop-filter: blur(16px) !important;
   border: 1px solid var(--xp-gold) !important;
   border-top: none !important;
   border-radius: 0 0 16px 16px !important;
@@ -56,11 +48,10 @@ html, body, #root {
   padding: 14px 20px !important;
   margin: 0 8px 8px !important;
   justify-content: space-between !important;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.4) !important;
 }
 .status i { border-left: 1px solid var(--xp-border) !important; }
 
-/* ── Botões padrão ───────────────────────────────────────── */
+/* ── Botões ──────────────────────────────────────────────── */
 button {
   background: var(--xp-gold) !important;
   color: #000 !important;
@@ -69,7 +60,6 @@ button {
   font-weight: 700 !important;
   text-transform: uppercase !important;
   letter-spacing: 0.5px !important;
-  padding: 12px 16px !important;
   transition: opacity 0.15s, transform 0.1s !important;
   box-shadow: none !important;
 }
@@ -81,53 +71,42 @@ button.blue, .wide.blue {
 }
 button.red { background: var(--xp-red) !important; color: #fff !important; }
 
-/* ── DOCK (barra de navegação) ───────────────────────────── */
+/* ── Dock ────────────────────────────────────────────────── */
 .dock {
   background: rgba(14, 16, 22, 0.97) !important;
   backdrop-filter: blur(20px) !important;
-  -webkit-backdrop-filter: blur(20px) !important;
   border-top: 1px solid var(--xp-border) !important;
   border-radius: 20px 20px 0 0 !important;
-  z-index: 200 !important;
   box-shadow: none !important;
+  z-index: 200 !important;
 }
 .dock button {
   background: transparent !important;
   color: var(--xp-muted) !important;
   font-size: 9px !important;
   font-weight: 600 !important;
-  letter-spacing: 0.3px !important;
   box-shadow: none !important;
 }
-.dock .current { color: var(--xp-gold) !important; }
-.dock .current em { filter: none !important; }
-.dock em { font-size: 22px !important; }
+.dock .current      { color: var(--xp-gold) !important; }
+.dock .current em   { filter: none !important; }
+.dock em            { font-size: 22px !important; }
 
-/* ── Pool Footer: ACIMA da dock ─────────────────────────── */
-/* styles.css define bottom:64px em mobile, dock tem ~61px de altura.
-   Precisamos de bottom maior que a dock para não sobrepor. */
+/* ── Pool Footer ─────────────────────────────────────────── */
+/* styles.css: bottom:64px(mobile) / 70px(base). A dock tem ~61-64px.
+   Subimos 6px a mais para evitar sobreposição. */
 .pool-home .pool-footer {
-  bottom: 68px !important;
-  background: rgba(16, 18, 26, 0.95) !important;
-  backdrop-filter: blur(16px) !important;
+  bottom: 70px !important;
+  background: rgba(14, 16, 22, 0.96) !important;
+  backdrop-filter: blur(12px) !important;
   border: none !important;
   border-top: 1px solid var(--xp-border) !important;
   border-radius: 0 !important;
   z-index: 150 !important;
-  padding: 12px 16px !important;
-  height: auto !important;
-  min-height: auto !important;
-  margin: 0 !important;
-  left: 0 !important;
-  right: 0 !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: space-between !important;
-  gap: 12px !important;
+  padding: 10px 14px !important;
 }
 .pool-home .pool-footer b {
   color: var(--xp-gold) !important;
-  font-size: 17px !important;
+  font-size: 16px !important;
   font-weight: 800 !important;
 }
 .pool-home .pool-footer small { font-size: 9px !important; }
@@ -136,76 +115,72 @@ button.red { background: var(--xp-red) !important; color: #fff !important; }
   color: #000 !important;
   font-weight: 800 !important;
   font-size: 11px !important;
-  padding: 10px 16px !important;
   border-radius: 10px !important;
   white-space: nowrap !important;
   flex-shrink: 0 !important;
 }
 .pool-home .pool-footer button:disabled { opacity: 0.4 !important; }
 
-/* ── Botão Aquário: acima do footer ─────────────────────── */
-/* styles.css: bottom:203px mobile. Footer height ~54px + dock 68px = 122px
-   Deixamos em 235px para garantir espaço */
+/* Mobile override */
+@media (max-width: 540px) {
+  .pool-home .pool-footer { bottom: 66px !important; }
+  .pool-home .pool-gallery {
+    height: calc(100dvh - 128px) !important;
+    min-height: 0 !important;
+  }
+}
+
+/* ── Botões Laterais (Aquário / Oficina) ─────────────────── */
+/* Valores base do styles.css: aquarium=232px, tools=154px.
+   Subimos para ficar acima do footer (footer ~55px + dock ~64px = 119px). */
 .pool-aquarium-toggle {
-  bottom: 230px !important;
-  left: 10px !important;
+  bottom: 240px !important;
   width: 68px !important;
   height: 68px !important;
   min-width: 68px !important;
-  background: rgba(16, 18, 26, 0.95) !important;
-  backdrop-filter: blur(16px) !important;
+  max-width: 68px !important;
+  background: rgba(14, 16, 22, 0.95) !important;
+  backdrop-filter: blur(12px) !important;
   border: 1px solid var(--xp-gold) !important;
   border-radius: 14px !important;
   display: grid !important;
   place-items: center !important;
-  gap: 0 !important;
-  padding: 8px 4px !important;
   z-index: 160 !important;
-  box-shadow: 0 4px 20px rgba(255,194,0,0.1) !important;
+  box-shadow: 0 4px 16px rgba(255,194,0,0.12) !important;
+  padding: 6px !important;
 }
-.pool-aquarium-toggle small {
-  font-size: 8px !important;
-  font-weight: 700 !important;
-  color: var(--xp-silver) !important;
-  text-align: center !important;
-  line-height: 1.2 !important;
-}
-
-/* ── Botão Oficina: logo abaixo do Aquário ───────────────── */
-/* styles.css: bottom:133-154px mobile. Logo acima do footer. */
 .pool-tools-toggle {
-  bottom: 150px !important;
-  left: 10px !important;
+  bottom: 162px !important;
   width: 68px !important;
   height: 68px !important;
   min-width: 68px !important;
-  background: rgba(16, 18, 26, 0.95) !important;
-  backdrop-filter: blur(16px) !important;
-  border: 1px solid var(--xp-gold-dark) !important;
+  max-width: 68px !important;
+  background: rgba(14, 16, 22, 0.95) !important;
+  backdrop-filter: blur(12px) !important;
+  border: 1px solid var(--xp-gold-dk) !important;
   border-radius: 14px !important;
   display: grid !important;
   place-items: center !important;
-  gap: 0 !important;
-  padding: 8px 4px !important;
   z-index: 160 !important;
   box-shadow: none !important;
+  padding: 6px !important;
 }
+@media (max-width: 540px) {
+  .pool-aquarium-toggle { bottom: 210px !important; }
+  .pool-tools-toggle    { bottom: 133px !important; }
+}
+.pool-aquarium-toggle small,
 .pool-tools-toggle small {
   font-size: 8px !important;
   font-weight: 700 !important;
   color: var(--xp-silver) !important;
   text-align: center !important;
-  line-height: 1.2 !important;
+  line-height: 1.1 !important;
 }
+.pool-aquarium-toggle span,
+.pool-tools-toggle span { font-size: 22px !important; }
 
-/* Media query: telas menores (iPhones) */
-@media (max-width: 540px) {
-  .pool-home .pool-footer { bottom: 62px !important; }
-  .pool-aquarium-toggle   { bottom: 222px !important; }
-  .pool-tools-toggle      { bottom: 144px !important; }
-}
-
-/* ── Frames (modais internos) ────────────────────────────── */
+/* ── Frames / Modais ─────────────────────────────────────── */
 .frame {
   background: var(--xp-surface) !important;
   border: 1px solid var(--xp-border) !important;
@@ -217,31 +192,24 @@ button.red { background: var(--xp-red) !important; color: #fff !important; }
   border: 1px solid var(--xp-border) !important;
   border-radius: 50% !important;
   color: var(--xp-muted) !important;
-  font-size: 16px !important;
-  width: 34px !important;
-  height: 34px !important;
-  display: grid !important;
-  place-items: center !important;
-  padding: 0 !important;
+  width: 34px !important; height: 34px !important;
+  display: grid !important; place-items: center !important;
+  padding: 0 !important; font-size: 16px !important;
 }
 
 /* ── Cards ───────────────────────────────────────────────── */
-.pack, .rank, .ref, .exchange, .profile, .history-list article, .mission-list article {
+.pack, .rank, .ref, .exchange, .profile,
+.history-list article, .mission-list article {
   background: var(--xp-surface2) !important;
   border: 1px solid var(--xp-border) !important;
   border-radius: 12px !important;
   color: var(--xp-text) !important;
   box-shadow: none !important;
 }
-.pack { background: linear-gradient(145deg, #1e2130 0%, #161920 100%) !important; }
-.pack b { color: var(--xp-text) !important; font-weight: 700 !important; }
-.pack span { color: var(--xp-gold) !important; font-weight: 700 !important; }
-.pack em {
-  background: transparent !important;
-  border: 1px solid var(--xp-gold) !important;
-  color: var(--xp-gold) !important;
-  border-radius: 6px !important;
-}
+.pack { background: linear-gradient(145deg,#1e2130,#161920) !important; }
+.pack b  { color: var(--xp-text) !important; font-weight: 700 !important; }
+.pack span { color: var(--xp-gold) !important; }
+.pack em   { border: 1px solid var(--xp-gold) !important; color: var(--xp-gold) !important; border-radius: 6px !important; background: transparent !important; }
 
 /* ── Inputs ─────────────────────────────────────────────── */
 input[type=number], input[type=text], select {
@@ -249,13 +217,12 @@ input[type=number], input[type=text], select {
   border: 1px solid var(--xp-border) !important;
   color: var(--xp-text) !important;
   border-radius: 10px !important;
-  font-weight: 500 !important;
 }
-input:focus { outline: none !important; border-color: var(--xp-gold) !important; }
+input:focus { border-color: var(--xp-gold) !important; outline: none !important; }
 
-/* ── Overlay / Dialog ────────────────────────────────────── */
+/* ── Overlay ─────────────────────────────────────────────── */
 .overlay, .page-layer {
-  background: rgba(5, 7, 13, 0.85) !important;
+  background: rgba(5,7,13,0.85) !important;
   backdrop-filter: blur(14px) !important;
 }
 .dialog {
@@ -263,90 +230,64 @@ input:focus { outline: none !important; border-color: var(--xp-gold) !important;
   border: 1px solid var(--xp-border) !important;
   border-radius: 20px !important;
   color: var(--xp-text) !important;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.8) !important;
 }
 .x { color: var(--xp-muted) !important; background: transparent !important; }
+
+/* ── Pool gallery: transparente ──────────────────────────── */
+.pool-gallery { background: transparent !important; border: none !important; }
+.pool-gallery::before, .pool-gallery::after, .pool-depth { display: none !important; }
 
 /* ── Wallet ─────────────────────────────────────────────── */
 .wallet-sums b {
   background: var(--xp-surface2) !important;
   border: 1px solid var(--xp-border) !important;
-  color: var(--xp-text) !important;
-  font-weight: 800 !important;
-  border-radius: 12px !important;
+  color: var(--xp-text) !important; font-weight: 800 !important;
 }
-.wallet-actions button {
-  background: var(--xp-surface2) !important;
-  border: 1px solid var(--xp-border) !important;
-  color: var(--xp-text) !important;
-}
+.wallet-actions button { background: var(--xp-surface2) !important; border: 1px solid var(--xp-border) !important; color: var(--xp-text) !important; }
 
-/* ── Mapa / Angler ───────────────────────────────────────── */
-.angler-stage {
-  background: var(--xp-surface2) !important;
-  border: 1px solid var(--xp-border) !important;
-  border-radius: 14px !important;
-}
-.map-art {
-  background: var(--xp-surface2) !important;
-  border: 1px solid var(--xp-border) !important;
-  border-radius: 12px !important;
-}
+/* ── Mapa ────────────────────────────────────────────────── */
+.angler-stage { background: var(--xp-surface2) !important; border: 1px solid var(--xp-border) !important; border-radius: 14px !important; }
+.map-art { background: var(--xp-surface2) !important; border: 1px solid var(--xp-border) !important; border-radius: 12px !important; }
 .map-art.selected { border-color: var(--xp-gold) !important; }
 .map-art span { background: rgba(13,15,18,0.85) !important; color: var(--xp-text) !important; }
 
-/* ── Pool gallery: transparente para ver o fundo ─────────── */
-.pool-gallery {
-  background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
-}
-.pool-gallery::before, .pool-gallery::after, .pool-depth { display: none !important; }
-
 /* ── TELA DE INTRO ───────────────────────────────────────── */
 .intro {
-  position: fixed !important;
-  inset: 0 !important;
   display: flex !important;
   flex-direction: column !important;
   align-items: center !important;
   justify-content: flex-end !important;
   padding-bottom: 60px !important;
-  background: transparent !important;
-  z-index: 999 !important;
   cursor: pointer !important;
+  /* Mantém o background ocean do styles.css — não sobrescrevemos */
 }
 
-/* Diver: grande, centralizado, ocupando 55% da tela */
-.intro-fish {
-  display: none !important;
-}
-.intro::before {
-  content: '' !important;
-  display: block !important;
+/* Mergulhador: fica no topo da tela, grande */
+.intro-diver {
   position: absolute !important;
-  top: 5% !important;
+  top: 4% !important;
   left: 50% !important;
   transform: translateX(-50%) !important;
-  width: min(320px, 80vw) !important;
-  height: min(320px, 80vw) !important;
-  background: url('/assets/diver-mascot.png') center/contain no-repeat !important;
+  width: min(280px, 75vw) !important;
+  height: auto !important;
+  object-fit: contain !important;
+  filter: drop-shadow(0 12px 32px rgba(0,0,0,0.7)) !important;
   pointer-events: none !important;
-  filter: drop-shadow(0 10px 30px rgba(0,0,0,0.6)) !important;
+  z-index: 2 !important;
 }
 
-/* Card inferior com PASSIVE EARN e a nota de cash */
+/* Card inferior */
 .intro-logo {
-  background: rgba(16, 18, 26, 0.90) !important;
+  position: relative !important;
+  z-index: 3 !important;
+  background: rgba(14, 16, 22, 0.90) !important;
   backdrop-filter: blur(20px) !important;
-  -webkit-backdrop-filter: blur(20px) !important;
-  border: 1px solid rgba(255,194,0,0.3) !important;
+  border: 1px solid rgba(255,194,0,0.35) !important;
   border-radius: 24px !important;
-  padding: 24px 28px !important;
+  padding: 20px 28px 24px !important;
   text-align: center !important;
   width: min(340px, 88vw) !important;
-  position: relative !important;
-  box-shadow: 0 -4px 40px rgba(255,194,0,0.08) !important;
+  box-shadow: 0 -4px 40px rgba(255,194,0,0.07) !important;
 }
 .intro-logo::before {
   content: 'PASSIVE EARN' !important;
@@ -355,7 +296,7 @@ input:focus { outline: none !important; border-color: var(--xp-gold) !important;
   font-size: 11px !important;
   letter-spacing: 5px !important;
   font-weight: 700 !important;
-  margin-bottom: 6px !important;
+  margin-bottom: 12px !important;
 }
 .intro-logo::after {
   content: 'Toque para entrar' !important;
@@ -364,30 +305,35 @@ input:focus { outline: none !important; border-color: var(--xp-gold) !important;
   font-size: 12px !important;
   margin-top: 14px !important;
   letter-spacing: 1px !important;
-  animation: pulse 2s ease-in-out infinite !important;
+  animation: pfpulse 2s ease-in-out infinite !important;
 }
-@keyframes pulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.4; }
+@keyframes pfpulse {
+  0%,100% { opacity:1; }
+  50%      { opacity:0.35; }
 }
+
+/* Nota de cash dentro do card */
+.intro-cash {
+  display: block !important;
+  width: min(200px, 55vw) !important;
+  height: auto !important;
+  margin: 0 auto 14px !important;
+  border-radius: 10px !important;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.5) !important;
+}
+
+/* Logo PIXEL FISH */
 .intro-logo b {
-  font-size: 32px !important;
+  font-size: 28px !important;
   font-weight: 800 !important;
   letter-spacing: -1px !important;
-  line-height: 1.1 !important;
+  color: #fff !important;
   display: block !important;
 }
 .intro-logo b span { color: var(--xp-gold) !important; }
 
-/* Nota de cash flutuando acima do card */
-.intro-logo .cash-note {
-  display: block !important;
-  width: min(180px, 50vw) !important;
-  height: auto !important;
-  margin: 0 auto 16px !important;
-  border-radius: 10px !important;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.5) !important;
-}
+/* Oculta elementos antigos da intro */
+.intro-fish { display: none !important; }
 
 /* ── Ícone Cash inline ───────────────────────────────────── */
 .inline-icon {
