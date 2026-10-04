@@ -79,7 +79,7 @@ button.red { background: var(--xp-red) !important; color: #fff !important; }
   border-radius: 20px 20px 0 0 !important;
   box-shadow: none !important;
   z-index: 200 !important;
-  padding-bottom: calc(env(safe-area-inset-bottom, 12px) + 40px) !important; /* +20px for Android */
+  padding-bottom: calc(env(safe-area-inset-bottom, 12px) + 60px) !important; /* Aumentado bastante para Android */
 }
 .dock button {
   background: transparent !important;
@@ -94,7 +94,7 @@ button.red { background: var(--xp-red) !important; color: #fff !important; }
 
 /* ── Pool Footer ─────────────────────────────────────────── */
 .pool-home .pool-footer {
-  bottom: 96px !important; /* Moved up by 26px */
+  bottom: 116px !important; /* Moved up by 46px */
   background: rgba(14, 16, 22, 0.96) !important;
   backdrop-filter: blur(12px) !important;
   border: none !important;
@@ -122,16 +122,16 @@ button.red { background: var(--xp-red) !important; color: #fff !important; }
 
 /* Mobile override */
 @media (max-width: 540px) {
-  .pool-home .pool-footer { bottom: 92px !important; } /* Moved up */
+  .pool-home .pool-footer { bottom: 112px !important; } /* Moved up */
   .pool-home .pool-gallery {
-    height: calc(100dvh - 150px) !important;
+    height: calc(100dvh - 170px) !important;
     min-height: 0 !important;
   }
 }
 
 /* ── Botões Laterais (Aquário / Oficina) ─────────────────── */
 .pool-aquarium-toggle {
-  bottom: 266px !important; /* Moved up by 26px */
+  bottom: 286px !important; /* Moved up by 46px */
   width: 68px !important;
   height: 68px !important;
   min-width: 68px !important;
@@ -147,7 +147,7 @@ button.red { background: var(--xp-red) !important; color: #fff !important; }
   padding: 6px !important;
 }
 .pool-tools-toggle {
-  bottom: 188px !important; /* Moved up by 26px */
+  bottom: 208px !important; /* Moved up by 46px */
   width: 68px !important;
   height: 68px !important;
   min-width: 68px !important;
@@ -163,8 +163,8 @@ button.red { background: var(--xp-red) !important; color: #fff !important; }
   padding: 6px !important;
 }
 @media (max-width: 540px) {
-  .pool-aquarium-toggle { bottom: 236px !important; } /* Moved up */
-  .pool-tools-toggle    { bottom: 159px !important; } /* Moved up */
+  .pool-aquarium-toggle { bottom: 256px !important; } /* Moved up */
+  .pool-tools-toggle    { bottom: 179px !important; } /* Moved up */
 }
 .pool-aquarium-toggle small,
 .pool-tools-toggle small {
@@ -183,6 +183,10 @@ button.red { background: var(--xp-red) !important; color: #fff !important; }
   border: 1px solid var(--xp-border) !important;
   border-radius: 20px !important;
   box-shadow: 0 20px 60px rgba(0,0,0,0.7) !important;
+  max-height: 85dvh !important;
+  overflow-y: auto !important;
+  overscroll-behavior: contain !important;
+  z-index: 251 !important;
 }
 .close {
   background: var(--xp-surface2) !important;
@@ -221,6 +225,7 @@ input:focus { border-color: var(--xp-gold) !important; outline: none !important;
 .overlay, .page-layer {
   background: rgba(5,7,13,0.85) !important;
   backdrop-filter: blur(14px) !important;
+  z-index: 250 !important;
 }
 .dialog {
   background: var(--xp-surface) !important;
