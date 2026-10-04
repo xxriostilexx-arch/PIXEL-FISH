@@ -26,7 +26,7 @@ const apiFetch:typeof window.fetch=async(input,init={})=>{const requestUrl=typeo
 const fetch=apiFetch;
 function webGuestInitData(){const existing=localStorage.getItem('pixel-fish-web-guest');if(existing)return `web:${existing}`;const id=crypto.randomUUID().replace(/-/g,'');localStorage.setItem('pixel-fish-web-guest',id);return `web:${id}`}
 const telegramWebApp=()=> (window as typeof window&{Telegram?:{WebApp?:TelegramWebApp}}).Telegram?.WebApp;
-function prepareTelegramViewport(fullscreen=false){const telegram=telegramWebApp();telegram?.ready?.();telegram?.expand?.();if(!fullscreen||!telegram?.requestFullscreen)return;try{telegram.requestFullscreen()}catch{/* Clientes Telegram antigos continuam no modo expandido. */}}
+function prepareTelegramViewport(fullscreen=true){const telegram=telegramWebApp();telegram?.ready?.();telegram?.expand?.();if(!fullscreen||!telegram?.requestFullscreen)return;try{telegram.requestFullscreen()}catch{/* Clientes Telegram antigos continuam no modo expandido. */}}
 async function authenticatePlayer(){const telegram=telegramWebApp();prepareTelegramViewport();const initData=telegram?.initData||(IS_LOCAL?'dev:local-player':webGuestInitData());const response=await rawFetch(`${API}/auth/telegram`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({initData})});const data=await response.json();if(!response.ok)throw new Error(data.error??'Não foi possível entrar no jogo');sessionToken=data.token as string;}
 function Frame({eyebrow,title,children}:{eyebrow:string,title:string,children:React.ReactNode}){return <motion.main className="frame" onClick={event=>event.stopPropagation()} initial={{opacity:0,y:14}} animate={{opacity:1,y:0}} exit={{opacity:0,y:-14}}><button className="close" aria-label="Voltar ao Pool" onClick={()=>window.dispatchEvent(new Event('pixel-fish:go-pool'))}>✖</button><small className="eyebrow">{eyebrow}</small><h1>{title}</h1>{children}</motion.main>}
 function Intro({onEnter}:{onEnter:()=>void}){return <main className="intro" onClick={onEnter}><img className="intro-fish fish-render comum i1" src={fishAsset({rarity:'Comum',id:'intro-common'})} alt=""/><img className="intro-fish fish-render raro i2" src={fishAsset({rarity:'Raro',id:'intro-rare'})} alt=""/><img className="intro-fish fish-render épico i3" src={fishAsset({rarity:'Épico',id:'intro-epic'})} alt=""/><div className="intro-logo">🎣<b>PIXEL <span>FISH</span></b><small>TOQUE PARA COMEÇAR A PESCAR</small></div></main>}
@@ -209,3 +209,4 @@ createRoot(document.getElementById('root')!).render(
   <App/>
  </TonConnectUIProvider>
 );
+

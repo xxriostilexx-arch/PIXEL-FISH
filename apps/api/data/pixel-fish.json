@@ -225,6 +225,7 @@
       "casts": 0,
       "missions": [],
       "photoUrl": "https://t.me/i/userpic/320/2J7sJ0xyw0bLGKxGlbI1z3g16Lj7vhF6V5vPrZjmCoUFO8CKn1dzVNlISFCwe5ni.svg",
+      "baitByMap": {},
       "bonusBait": {},
       "cylinders": 0,
       "farmMonth": "2026-10",
@@ -236,6 +237,9 @@
       "referralCash": 0,
       "reservedCash": 0,
       "lastAccruedAt": "2026-10-04T14:52:31.733Z",
+      "temporaryBait": 0,
+      "temporaryCash": 0,
+      "temporaryFish": 0,
       "referralCounts": [
         0,
         0,
@@ -246,11 +250,7 @@
         0,
         0
       ],
-      "baitByMap": {},
-      "temporaryFish": 0,
-      "temporaryCash": 0,
       "temporaryBaitByMap": {},
-      "temporaryBait": 0,
       "temporaryCylinders": 0
     },
     "dev:local-player": {

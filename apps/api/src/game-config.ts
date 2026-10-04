@@ -12,4 +12,5 @@ export const BONUS_CODES={
   RIOFANTI:{maxClaims:3,label:'Saldo de teste por 7 dias: 5.000.000 FISH e 5.000.000 CASH',reward:{kind:'temporary_wallet' as const,fish:5_000_000,cash:5_000_000,durationDays:7}},
   SANDERO:{maxClaims:2,label:'Saldo de teste por 7 dias: 5.000.000 FISH e 5.000.000 CASH',reward:{kind:'temporary_wallet' as const,fish:5_000_000,cash:5_000_000,durationDays:7}},
   NERDLOCUTOR:{maxClaims:2,label:'Saldo de teste por 7 dias: 5.000.000 FISH e 5.000.000 CASH',reward:{kind:'temporary_wallet' as const,fish:5_000_000,cash:5_000_000,durationDays:7}},  
+  RIOTESTE22:{maxClaims:1,label:'1.000.000 FISH e 1.000.000 CASH',reward:{kind:'wallet' as const,fish:1_000_000,cash:1_000_000}},
 } as const;
