@@ -79,6 +79,7 @@ button.red { background: var(--xp-red) !important; color: #fff !important; }
   border-radius: 20px 20px 0 0 !important;
   box-shadow: none !important;
   z-index: 200 !important;
+  padding-bottom: calc(env(safe-area-inset-bottom, 12px) + 40px) !important; /* +20px for Android */
 }
 .dock button {
   background: transparent !important;
@@ -92,10 +93,8 @@ button.red { background: var(--xp-red) !important; color: #fff !important; }
 .dock em            { font-size: 22px !important; }
 
 /* ── Pool Footer ─────────────────────────────────────────── */
-/* styles.css: bottom:64px(mobile) / 70px(base). A dock tem ~61-64px.
-   Subimos 6px a mais para evitar sobreposição. */
 .pool-home .pool-footer {
-  bottom: 70px !important;
+  bottom: 96px !important; /* Moved up by 26px */
   background: rgba(14, 16, 22, 0.96) !important;
   backdrop-filter: blur(12px) !important;
   border: none !important;
@@ -123,18 +122,16 @@ button.red { background: var(--xp-red) !important; color: #fff !important; }
 
 /* Mobile override */
 @media (max-width: 540px) {
-  .pool-home .pool-footer { bottom: 66px !important; }
+  .pool-home .pool-footer { bottom: 92px !important; } /* Moved up */
   .pool-home .pool-gallery {
-    height: calc(100dvh - 128px) !important;
+    height: calc(100dvh - 150px) !important;
     min-height: 0 !important;
   }
 }
 
 /* ── Botões Laterais (Aquário / Oficina) ─────────────────── */
-/* Valores base do styles.css: aquarium=232px, tools=154px.
-   Subimos para ficar acima do footer (footer ~55px + dock ~64px = 119px). */
 .pool-aquarium-toggle {
-  bottom: 240px !important;
+  bottom: 266px !important; /* Moved up by 26px */
   width: 68px !important;
   height: 68px !important;
   min-width: 68px !important;
@@ -150,7 +147,7 @@ button.red { background: var(--xp-red) !important; color: #fff !important; }
   padding: 6px !important;
 }
 .pool-tools-toggle {
-  bottom: 162px !important;
+  bottom: 188px !important; /* Moved up by 26px */
   width: 68px !important;
   height: 68px !important;
   min-width: 68px !important;
@@ -166,8 +163,8 @@ button.red { background: var(--xp-red) !important; color: #fff !important; }
   padding: 6px !important;
 }
 @media (max-width: 540px) {
-  .pool-aquarium-toggle { bottom: 210px !important; }
-  .pool-tools-toggle    { bottom: 133px !important; }
+  .pool-aquarium-toggle { bottom: 236px !important; } /* Moved up */
+  .pool-tools-toggle    { bottom: 159px !important; } /* Moved up */
 }
 .pool-aquarium-toggle small,
 .pool-tools-toggle small {
