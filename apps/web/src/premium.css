@@ -3,15 +3,15 @@
 /* --- PREMIUM XP INVESTIMENTOS STYLE OVERRIDE --- */
 
 :root {
-  /* XP Dark Palette */
-  --xp-bg: #0b0c10;
-  --xp-surface: #17181c;
-  --xp-surface-hover: #1e1f24;
+  /* XP Platinum/Dark Palette */
+  --xp-bg: #0d0f12;
+  --xp-surface: #1a1c23;
+  --xp-surface-hover: #242730;
   --xp-gold: #ffc200;
   --xp-gold-dark: #cc9b00;
   --xp-text: #ffffff;
-  --xp-text-muted: #a0a0ab;
-  --xp-border: #292a2f;
+  --xp-text-muted: #b0b3bf;
+  --xp-border: #323540;
   --xp-green: #00d27a;
   --xp-red: #f33535;
   --xp-blue: #0084ff;
@@ -35,12 +35,13 @@ body {
 
 /* Base layouts */
 .reef-bg {
-  background: radial-gradient(circle at 50% 0%, #1e1f24 0%, #0b0c10 70%) !important;
+  background: radial-gradient(circle at 50% 0%, #383c48 0%, var(--xp-bg) 80%) !important;
   background-image: none !important;
 }
 
 .app-shell {
   padding-top: 10px !important;
+  padding-bottom: calc(env(safe-area-inset-bottom, 34px) + 90px) !important;
 }
 
 .frame, .app-shell > .frame {
@@ -98,8 +99,7 @@ button.red {
   border: 1px solid var(--xp-border) !important;
   border-bottom: none !important;
   border-radius: 24px 24px 0 0 !important;
-  padding: 10px 10px 40px !important;
-  margin-bottom: 20px !important;
+  padding: 16px 10px calc(env(safe-area-inset-bottom, 34px) + 30px) !important;
   backdrop-filter: blur(10px) !important;
   box-shadow: 0 -10px 40px rgba(0,0,0,0.5) !important;
 }
@@ -191,7 +191,7 @@ input:focus {
   border-radius: 16px !important;
   color: var(--xp-text) !important;
   box-shadow: 0 4px 12px rgba(0,0,0,0.5) !important;
-  margin-bottom: 30px !important;
+  margin-bottom: calc(env(safe-area-inset-bottom, 34px) + 70px) !important;
 }
 .pool-footer b { color: var(--xp-gold) !important; font-size: 16px !important; }
 .pool-open {
