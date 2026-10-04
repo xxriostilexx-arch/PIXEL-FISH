@@ -1,21 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
 
 /* ============================================================
-   PIXEL FISH — PREMIUM v6  (minimal overrides, máxima estabilidade)
+   PIXEL FISH — DEEP OCEAN TECH THEME
    ============================================================ */
 
 :root {
-  --xp-bg:       #0d0f12;
-  --xp-surface:  #161920;
-  --xp-surface2: #1e2130;
+  --xp-bg:       #030b14;
+  --xp-surface:  rgba(15, 23, 42, 0.45);
+  --xp-surface2: rgba(30, 41, 59, 0.55);
+  --xp-silver:   #94a3b8;
+  --xp-text:     #f8fafc;
+  --xp-muted:    #64748b;
+  --xp-border:   rgba(255, 255, 255, 0.08);
+  --xp-green:    #10b981;
+  --xp-cyan:     #38bdf8;
+  --xp-cyan-glow: rgba(56, 189, 248, 0.5);
   --xp-gold:     #ffc200;
   --xp-gold-dk:  #cc9b00;
-  --xp-silver:   #c0c4d0;
-  --xp-text:     #f0f2ff;
-  --xp-muted:    #8a8fa8;
-  --xp-border:   #2a2e40;
-  --xp-green:    #00d27a;
-  --xp-red:      #f33535;
 }
 
 /* ── Fonte global ────────────────────────────────────────── */
@@ -24,165 +25,248 @@
   text-shadow: none !important;
   -webkit-font-smoothing: antialiased !important;
 }
-body { color: var(--xp-text) !important; }
-h1, h2, h3 { font-weight: 700 !important; color: var(--xp-text) !important; }
+body { color: var(--xp-text) !important; background: var(--xp-bg) !important;}
+h1, h2, h3 { font-weight: 800 !important; color: var(--xp-text) !important; }
 small { color: var(--xp-muted) !important; }
 .eyebrow {
-  color: var(--xp-muted) !important;
+  color: var(--xp-cyan) !important;
   text-transform: uppercase !important;
   letter-spacing: 2px !important;
   font-size: 10px !important;
-  font-weight: 600 !important;
+  font-weight: 700 !important;
 }
 
 /* ── Status Bar ──────────────────────────────────────────── */
 .status {
-  background: rgba(16, 18, 26, 0.92) !important;
+  background: var(--xp-surface) !important;
   backdrop-filter: blur(16px) !important;
-  border: 1px solid var(--xp-gold) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  border: 1px solid var(--xp-border) !important;
   border-top: none !important;
-  border-radius: 0 0 16px 16px !important;
+  border-radius: 0 0 24px 24px !important;
   color: var(--xp-text) !important;
   font-weight: 700 !important;
-  font-size: 14px !important;
-  padding: 14px 20px !important;
-  margin: 0 8px 8px !important;
-  justify-content: space-between !important;
+  font-size: 13px !important;
+  padding: 16px 20px !important;
+  margin: 0 12px 16px !important;
+  justify-content: center !important;
+  gap: 16px !important;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.5) !important;
 }
-.status i { border-left: 1px solid var(--xp-border) !important; }
+.status b {
+  color: var(--xp-cyan) !important;
+  text-shadow: 0 0 12px var(--xp-cyan-glow) !important;
+  font-size: 16px !important;
+  letter-spacing: 0.5px !important;
+}
+.status i { 
+  border-left: 1px solid var(--xp-border) !important; 
+  height: 20px !important;
+  margin: 0 4px !important;
+}
 
 /* ── Botões ──────────────────────────────────────────────── */
 button {
-  background: var(--xp-gold) !important;
+  background: var(--xp-cyan) !important;
   color: #000 !important;
   border: none !important;
-  border-radius: 10px !important;
-  font-weight: 700 !important;
+  border-radius: 12px !important;
+  font-weight: 800 !important;
   text-transform: uppercase !important;
   letter-spacing: 0.5px !important;
-  transition: opacity 0.15s, transform 0.1s !important;
-  box-shadow: none !important;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  box-shadow: 0 4px 20px var(--xp-cyan-glow) !important;
 }
-button:active { opacity: 0.8 !important; transform: scale(0.97) !important; }
+button:active { transform: scale(0.96) !important; }
 button.blue, .wide.blue {
-  background: var(--xp-surface2) !important;
-  color: var(--xp-text) !important;
-  border: 1px solid var(--xp-border) !important;
+  background: linear-gradient(180deg, #38bdf8, #0284c7) !important;
+  color: #fff !important;
+  border: none !important;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.5) !important;
 }
-button.red { background: var(--xp-red) !important; color: #fff !important; }
 
 /* ── Dock ────────────────────────────────────────────────── */
 .dock {
-  background: rgba(14, 16, 22, 0.97) !important;
-  backdrop-filter: blur(20px) !important;
-  border-top: 1px solid var(--xp-border) !important;
-  border-radius: 20px 20px 0 0 !important;
+  background: transparent !important;
+  backdrop-filter: none !important;
+  border: none !important;
   box-shadow: none !important;
   z-index: 200 !important;
-  padding-bottom: calc(env(safe-area-inset-bottom, 12px) + 60px) !important; /* Aumentado bastante para Android */
+  padding-bottom: calc(env(safe-area-inset-bottom, 12px) + 24px) !important;
+  position: relative !important;
+}
+.dock::before {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0; top: -20px;
+  background: linear-gradient(to top, rgba(2,8,19,0.98) 20%, rgba(2,8,19,0.8) 60%, transparent);
+  z-index: -1;
+  pointer-events: none;
 }
 .dock button {
   background: transparent !important;
-  color: var(--xp-muted) !important;
-  font-size: 9px !important;
+  color: var(--xp-silver) !important;
+  font-size: 10px !important;
   font-weight: 600 !important;
   box-shadow: none !important;
+  padding: 8px !important;
 }
-.dock .current      { color: var(--xp-gold) !important; }
-.dock .current em   { filter: none !important; }
-.dock em            { font-size: 22px !important; }
+.dock .current { 
+  color: #fff !important; 
+  text-shadow: 0 0 10px rgba(255,255,255,0.4) !important;
+}
+.dock .current em { filter: drop-shadow(0 0 4px rgba(255,255,255,0.6)) !important; }
+.dock em { font-size: 24px !important; margin-bottom: 4px !important; }
 
-/* ── Pool Footer ─────────────────────────────────────────── */
-.pool-home .pool-footer {
-  bottom: 116px !important; /* Moved up by 46px */
-  background: rgba(14, 16, 22, 0.96) !important;
-  backdrop-filter: blur(12px) !important;
-  border: none !important;
-  border-top: 1px solid var(--xp-border) !important;
-  border-radius: 0 !important;
-  z-index: 150 !important;
-  padding: 10px 14px !important;
-}
-.pool-home .pool-footer b {
-  color: var(--xp-gold) !important;
-  font-size: 16px !important;
+/* ── Dock Logo ──────────────────────────────────────────── */
+.dock-logo {
+  position: fixed !important;
+  bottom: max(8px, env(safe-area-inset-bottom, 8px)) !important;
+  left: 0 !important;
+  right: 0 !important;
+  text-align: center !important;
+  font-family: 'Outfit', sans-serif !important;
   font-weight: 800 !important;
-}
-.pool-home .pool-footer small { font-size: 9px !important; }
-.pool-home .pool-footer button {
-  background: var(--xp-gold) !important;
-  color: #000 !important;
-  font-weight: 800 !important;
+  color: rgba(255, 255, 255, 0.2) !important;
   font-size: 11px !important;
-  border-radius: 10px !important;
-  white-space: nowrap !important;
-  flex-shrink: 0 !important;
-}
-.pool-home .pool-footer button:disabled { opacity: 0.4 !important; }
-
-/* Mobile override */
-@media (max-width: 540px) {
-  .pool-home .pool-footer { bottom: 112px !important; } /* Moved up */
-  .pool-home .pool-gallery {
-    height: calc(100dvh - 170px) !important;
-    min-height: 0 !important;
-  }
+  letter-spacing: 5px !important;
+  pointer-events: none !important;
+  z-index: 201 !important;
+  text-transform: uppercase !important;
 }
 
-/* ── Botões Laterais (Aquário / Oficina) ─────────────────── */
-.pool-aquarium-toggle {
-  bottom: 286px !important; /* Moved up by 46px */
+/* ── Active Boost Pill ───────────────────────────────────── */
+.active-boost {
+  position: absolute !important;
+  top: 80px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  background: rgba(16, 185, 129, 0.15) !important;
+  border: 1px solid rgba(16, 185, 129, 0.4) !important;
+  color: var(--xp-green) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  padding: 6px 16px !important;
+  border-radius: 20px !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  z-index: 100 !important;
+  box-shadow: 0 0 24px rgba(16, 185, 129, 0.25) !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  pointer-events: none !important;
+}
+
+/* ── Floating Buttons (Right & Left) ─────────────────────── */
+.side-buttons-left, .side-buttons-right {
+  position: absolute !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 12px !important;
+  z-index: 160 !important;
+}
+.side-buttons-left {
+  left: 16px !important;
+  bottom: 150px !important;
+}
+.side-buttons-right {
+  right: 16px !important;
+  top: 140px !important;
+}
+.side-btn {
   width: 68px !important;
   height: 68px !important;
-  min-width: 68px !important;
-  max-width: 68px !important;
-  background: rgba(14, 16, 22, 0.95) !important;
-  backdrop-filter: blur(12px) !important;
-  border: 1px solid var(--xp-gold) !important;
-  border-radius: 14px !important;
-  display: grid !important;
-  place-items: center !important;
-  z-index: 160 !important;
-  box-shadow: 0 4px 16px rgba(255,194,0,0.12) !important;
-  padding: 6px !important;
+  background: var(--xp-surface) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  border: 1px solid var(--xp-border) !important;
+  border-radius: 18px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: var(--xp-text) !important;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.6) !important;
+  padding: 4px !important;
+  text-transform: uppercase !important;
 }
-.pool-tools-toggle {
-  bottom: 208px !important; /* Moved up by 46px */
-  width: 68px !important;
-  height: 68px !important;
-  min-width: 68px !important;
-  max-width: 68px !important;
-  background: rgba(14, 16, 22, 0.95) !important;
-  backdrop-filter: blur(12px) !important;
-  border: 1px solid var(--xp-gold-dk) !important;
-  border-radius: 14px !important;
-  display: grid !important;
-  place-items: center !important;
-  z-index: 160 !important;
-  box-shadow: none !important;
-  padding: 6px !important;
+.side-btn:hover { background: var(--xp-surface2) !important; }
+.side-btn span { 
+  font-size: 22px !important; 
+  margin-bottom: 4px !important; 
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.4)) !important;
 }
-@media (max-width: 540px) {
-  .pool-aquarium-toggle { bottom: 256px !important; } /* Moved up */
-  .pool-tools-toggle    { bottom: 179px !important; } /* Moved up */
-}
-.pool-aquarium-toggle small,
-.pool-tools-toggle small {
+.side-btn small {
   font-size: 8px !important;
   font-weight: 700 !important;
   color: var(--xp-silver) !important;
   text-align: center !important;
   line-height: 1.1 !important;
 }
-.pool-aquarium-toggle span,
-.pool-tools-toggle span { font-size: 22px !important; }
+
+/* Hide old buttons if any still exist directly */
+.pool-aquarium-toggle, .pool-tools-toggle, .quick {
+  display: none !important;
+}
+
+/* ── Pool Footer ─────────────────────────────────────────── */
+.pool-home .pool-footer {
+  bottom: 100px !important; /* Acima do dock */
+  background: rgba(10, 15, 28, 0.75) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border: 1px solid var(--xp-border) !important;
+  border-radius: 20px !important;
+  margin: 0 12px !important;
+  z-index: 150 !important;
+  padding: 16px 20px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  box-shadow: 0 12px 48px rgba(0,0,0,0.8) !important;
+}
+.pool-home .pool-footer > div {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 6px !important;
+}
+.pool-home .pool-footer b {
+  color: var(--xp-text) !important;
+  font-size: 18px !important;
+  font-weight: 800 !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+}
+.pool-home .pool-footer small { 
+  font-size: 10px !important; 
+  color: var(--xp-silver) !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+}
+.pool-home .pool-footer button {
+  padding: 14px 24px !important;
+  font-size: 12px !important;
+  border-radius: 14px !important;
+  flex-shrink: 0 !important;
+}
+
+/* Mobile override */
+@media (max-width: 540px) {
+  .pool-home .pool-gallery {
+    height: calc(100dvh - 120px) !important;
+  }
+}
 
 /* ── Frames / Modais ─────────────────────────────────────── */
 .frame {
-  background: var(--xp-surface) !important;
+  background: rgba(10, 15, 28, 0.95) !important;
+  backdrop-filter: blur(24px) !important;
+  -webkit-backdrop-filter: blur(24px) !important;
   border: 1px solid var(--xp-border) !important;
-  border-radius: 20px !important;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.7) !important;
+  border-radius: 24px !important;
+  box-shadow: 0 24px 80px rgba(0,0,0,0.8) !important;
   max-height: 85dvh !important;
   overflow-y: auto !important;
   overscroll-behavior: contain !important;
@@ -192,8 +276,8 @@ button.red { background: var(--xp-red) !important; color: #fff !important; }
   background: var(--xp-surface2) !important;
   border: 1px solid var(--xp-border) !important;
   border-radius: 50% !important;
-  color: var(--xp-muted) !important;
-  width: 34px !important; height: 34px !important;
+  color: var(--xp-text) !important;
+  width: 36px !important; height: 36px !important;
   display: grid !important; place-items: center !important;
   padding: 0 !important; font-size: 16px !important;
 }
@@ -201,36 +285,37 @@ button.red { background: var(--xp-red) !important; color: #fff !important; }
 /* ── Cards ───────────────────────────────────────────────── */
 .pack, .rank, .ref, .exchange, .profile,
 .history-list article, .mission-list article {
-  background: var(--xp-surface2) !important;
+  background: var(--xp-surface) !important;
   border: 1px solid var(--xp-border) !important;
-  border-radius: 12px !important;
+  border-radius: 16px !important;
   color: var(--xp-text) !important;
-  box-shadow: none !important;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.3) !important;
 }
-.pack { background: linear-gradient(145deg,#1e2130,#161920) !important; }
+.pack { background: linear-gradient(145deg, rgba(30, 41, 59, 0.8), rgba(15, 23, 42, 0.8)) !important; }
 .pack b  { color: var(--xp-text) !important; font-weight: 700 !important; }
-.pack span { color: var(--xp-gold) !important; }
-.pack em   { border: 1px solid var(--xp-gold) !important; color: var(--xp-gold) !important; border-radius: 6px !important; background: transparent !important; }
+.pack span { color: var(--xp-cyan) !important; }
+.pack em   { border: 1px solid var(--xp-cyan) !important; color: var(--xp-cyan) !important; border-radius: 8px !important; background: transparent !important; }
 
 /* ── Inputs ─────────────────────────────────────────────── */
 input[type=number], input[type=text], select {
-  background: var(--xp-bg) !important;
+  background: rgba(0,0,0,0.4) !important;
   border: 1px solid var(--xp-border) !important;
   color: var(--xp-text) !important;
-  border-radius: 10px !important;
+  border-radius: 12px !important;
 }
-input:focus { border-color: var(--xp-gold) !important; outline: none !important; }
+input:focus { border-color: var(--xp-cyan) !important; outline: none !important; box-shadow: 0 0 12px var(--xp-cyan-glow) !important;}
 
 /* ── Overlay ─────────────────────────────────────────────── */
 .overlay, .page-layer {
-  background: rgba(5,7,13,0.85) !important;
-  backdrop-filter: blur(14px) !important;
+  background: rgba(2, 8, 19, 0.85) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
   z-index: 250 !important;
 }
 .dialog {
-  background: var(--xp-surface) !important;
+  background: rgba(15, 23, 42, 0.95) !important;
   border: 1px solid var(--xp-border) !important;
-  border-radius: 20px !important;
+  border-radius: 24px !important;
   color: var(--xp-text) !important;
 }
 .x { color: var(--xp-muted) !important; background: transparent !important; }
@@ -248,10 +333,10 @@ input:focus { border-color: var(--xp-gold) !important; outline: none !important;
 .wallet-actions button { background: var(--xp-surface2) !important; border: 1px solid var(--xp-border) !important; color: var(--xp-text) !important; }
 
 /* ── Mapa ────────────────────────────────────────────────── */
-.angler-stage { background: var(--xp-surface2) !important; border: 1px solid var(--xp-border) !important; border-radius: 14px !important; }
-.map-art { background: var(--xp-surface2) !important; border: 1px solid var(--xp-border) !important; border-radius: 12px !important; }
-.map-art.selected { border-color: var(--xp-gold) !important; }
-.map-art span { background: rgba(13,15,18,0.85) !important; color: var(--xp-text) !important; }
+.angler-stage { background: var(--xp-surface) !important; border: 1px solid var(--xp-border) !important; border-radius: 16px !important; }
+.map-art { background: var(--xp-surface) !important; border: 1px solid var(--xp-border) !important; border-radius: 14px !important; }
+.map-art.selected { border-color: var(--xp-cyan) !important; box-shadow: 0 0 16px var(--xp-cyan-glow) !important; }
+.map-art span { background: rgba(2, 8, 19, 0.85) !important; color: var(--xp-text) !important; }
 
 /* ── TELA INICIAL (HOME / INTRO) ─────────────────────────── */
 .intro-screen {
@@ -261,17 +346,16 @@ input:focus { border-color: var(--xp-gold) !important; outline: none !important;
   display: flex !important;
   flex-direction: column !important;
   align-items: center !important;
-  justify-content: flex-end !important;
+  justify-content: center !important;
   overflow: hidden !important;
   padding: env(safe-area-inset-top, 24px) 20px calc(env(safe-area-inset-bottom, 24px) + 32px) !important;
   z-index: 100 !important;
   background: var(--xp-bg) !important;
 }
 
-/* O fundo submarino é provido por .reef-bg, que já tem posição fixed e z-index 0 */
 .intro-screen .reef-bg {
   z-index: 0 !important;
-  opacity: 0.85 !important;
+  opacity: 0.9 !important;
 }
 
 .intro-bg-diver {
@@ -303,82 +387,83 @@ input:focus { border-color: var(--xp-gold) !important; outline: none !important;
 .intro-card {
   position: relative !important;
   z-index: 2 !important;
-  background: rgba(14, 16, 22, 0.95) !important;
+  background: rgba(10, 15, 28, 0.7) !important;
   backdrop-filter: blur(24px) !important;
-  border: 1px solid rgba(255,194,0,0.4) !important;
-  border-radius: 28px !important;
-  padding: 32px 24px !important;
+  -webkit-backdrop-filter: blur(24px) !important;
+  border: 1px solid rgba(255,255,255,0.1) !important;
+  border-radius: 32px !important;
+  padding: 40px 32px !important;
   width: 100% !important;
   max-width: 400px !important;
   display: flex !important;
   flex-direction: column !important;
   align-items: center !important;
-  box-shadow: 0 12px 48px rgba(0,0,0,0.8), inset 0 1px 1px rgba(255,255,255,0.05) !important;
-  margin-top: auto !important; /* Empurra para o final da tela */
+  box-shadow: 0 20px 80px rgba(0,0,0,0.8), inset 0 1px 1px rgba(255,255,255,0.1) !important;
+  margin-top: 25vh !important;
 }
 
 .intro-eyebrow {
-  color: var(--xp-gold) !important;
+  color: var(--xp-cyan) !important;
   font-size: 12px !important;
   font-weight: 800 !important;
   letter-spacing: 4px !important;
   text-transform: uppercase !important;
-  margin-bottom: 20px !important;
+  margin-bottom: 24px !important;
 }
 
 .intro-note {
   width: 100% !important;
   max-width: 260px !important;
   height: auto !important;
-  border-radius: 12px !important;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.5) !important;
-  margin-bottom: 24px !important;
-  border: 1px solid var(--xp-border) !important;
+  border-radius: 16px !important;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.6) !important;
+  margin-bottom: 28px !important;
+  border: 1px solid rgba(255,255,255,0.1) !important;
   transition: transform 0.3s ease !important;
 }
 .intro-note:hover {
-  transform: scale(1.02) translateY(-4px) !important;
+  transform: scale(1.05) translateY(-6px) !important;
 }
 
 .intro-title {
-  font-size: 36px !important;
-  font-weight: 800 !important;
+  font-size: 38px !important;
+  font-weight: 900 !important;
   letter-spacing: -1px !important;
   color: #fff !important;
-  margin: 0 0 8px !important;
+  margin: 0 0 12px !important;
   line-height: 1 !important;
 }
 .intro-title span {
-  color: var(--xp-gold) !important;
+  color: var(--xp-cyan) !important;
+  text-shadow: 0 0 20px var(--xp-cyan-glow) !important;
 }
 
 .intro-subtitle {
   color: var(--xp-muted) !important;
-  font-size: 15px !important;
+  font-size: 16px !important;
   font-weight: 500 !important;
-  margin: 0 0 32px !important;
+  margin: 0 0 36px !important;
   text-align: center !important;
 }
 
 .intro-enter-btn {
   width: 100% !important;
-  background: var(--xp-gold) !important;
-  color: #000 !important;
-  font-size: 16px !important;
+  background: linear-gradient(180deg, #38bdf8, #0284c7) !important;
+  color: #fff !important;
+  font-size: 18px !important;
   font-weight: 800 !important;
-  letter-spacing: 1px !important;
-  padding: 18px !important;
-  border-radius: 16px !important;
+  letter-spacing: 1.5px !important;
+  padding: 20px !important;
+  border-radius: 18px !important;
   border: none !important;
-  box-shadow: 0 8px 24px rgba(255,194,0,0.25) !important;
+  box-shadow: 0 12px 32px var(--xp-cyan-glow) !important;
   cursor: pointer !important;
-  transition: all 0.2s ease !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
   text-transform: uppercase !important;
-  text-shadow: none !important;
 }
 .intro-enter-btn:hover, .intro-enter-btn:active {
   transform: translateY(-2px) scale(0.98) !important;
-  box-shadow: 0 12px 32px rgba(255,194,0,0.4) !important;
+  box-shadow: 0 16px 40px rgba(56, 189, 248, 0.6) !important;
 }
 
 /* ── Ícone Cash inline ───────────────────────────────────── */
@@ -387,27 +472,12 @@ input:focus { border-color: var(--xp-gold) !important; outline: none !important;
   width: auto !important;
   vertical-align: text-bottom !important;
   display: inline-block !important;
-  border-radius: 3px !important;
-  margin-right: 3px !important;
+  border-radius: 4px !important;
+  margin-right: 4px !important;
 }
 
 /* ── Scrollbars ──────────────────────────────────────────── */
-::-webkit-scrollbar { width: 3px; }
+::-webkit-scrollbar { width: 4px; height: 4px; }
 ::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { background: var(--xp-border); border-radius: 4px; }
-
-/* ── Dock Logo ──────────────────────────────────────────── */
-.dock-logo {
-  position: fixed !important;
-  bottom: max(6px, env(safe-area-inset-bottom, 6px)) !important;
-  left: 0 !important;
-  right: 0 !important;
-  text-align: center !important;
-  font-family: monospace !important;
-  color: rgba(255, 255, 255, 0.2) !important;
-  font-size: 10px !important;
-  letter-spacing: 4px !important;
-  pointer-events: none !important;
-  z-index: 50 !important;
-}
-
+::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.2); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.4); }

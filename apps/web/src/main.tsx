@@ -235,7 +235,7 @@ function Intro({ onEnter }: { onEnter: () => void }) {
     <main className="intro-screen">
       <div className="reef-bg" />
       <div className="intro-bg-diver">
-        <img src="/assets/diver-mascot.png" alt="Mergulhador" />
+        <img src="/assets/diver.png" alt="Mergulhador" />
       </div>
       <section className="intro-card">
         <small className="intro-eyebrow">PASSIVE EARN</small>
@@ -361,17 +361,39 @@ function Pool({
         )}
         <i className="pool-bubbles">◦ ◦ ◦</i>
       </section>
-      <button
-        className="pool-aquarium-toggle"
-        onClick={() => setShowCollection(true)}
-        aria-label="Abrir Meu Aquário"
-      >
-        <span aria-hidden="true">🐟</span>
-        <small>MEU AQUÁRIO</small>
-      </button>
-      <button className="pool-tools-toggle" onClick={showPoolTools}>
-        ☰<small>OFICINA</small>
-      </button>
+      <div className="active-boost">
+        <span>✨</span> +15% CASH ATIVO
+      </div>
+
+      <div className="side-buttons-right">
+        <button className="side-btn" onClick={() => alert("Em breve")}>
+          <span>🎁</span>
+          <small>7 DIAS</small>
+        </button>
+        <button className="side-btn" onClick={() => alert("Em breve")}>
+          <span>🎰</span>
+          <small>ROLETA</small>
+        </button>
+        <button className="side-btn" onClick={() => (document.querySelector(".quick button") as HTMLButtonElement)?.click()}>
+          <span>🤿</span>
+          <small>MERGULHO</small>
+        </button>
+      </div>
+
+      <div className="side-buttons-left">
+        <button className="side-btn" onClick={() => setShowCollection(true)}>
+          <span>🐟</span>
+          <small>AQUÁRIO</small>
+        </button>
+        <button className="side-btn" onClick={() => alert("Em breve")}>
+          <span>🍞</span>
+          <small>ALIMENTAR</small>
+        </button>
+        <button className="side-btn" onClick={() => { if (typeof (window as any).showPoolTools === 'function') (window as any).showPoolTools(); else if (typeof showPoolTools === 'function') showPoolTools(); else alert("Em breve"); }}>
+          <span>🛠️</span>
+          <small>OFICINA</small>
+        </button>
+      </div>
       <section className="pool-footer">
         <div>
           <small>
