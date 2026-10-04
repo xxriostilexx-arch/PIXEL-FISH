@@ -1,0 +1,2382 @@
+{
+  "players": {
+    "cora": {
+      "id": "cora",
+      "bait": 0,
+      "cash": 0,
+      "fish": 0,
+      "name": "Cora",
+      "casts": 141,
+      "missions": [],
+      "baitByMap": {},
+      "bonusBait": {},
+      "cylinders": 0,
+      "farmMonth": "2026-09",
+      "inventory": [],
+      "accountType": "telegram",
+      "bonusClaims": [],
+      "monthlyFarm": 0,
+      "pendingCash": 0,
+      "referralCash": 0,
+      "reservedCash": 0,
+      "lastAccruedAt": "2026-09-20T18:57:07.217Z",
+      "temporaryBait": 0,
+      "temporaryCash": 0,
+      "temporaryFish": 0,
+      "referralCounts": [
+        0,
+        0,
+        0
+      ],
+      "referralEarnings": [
+        0,
+        0,
+        0
+      ],
+      "temporaryBaitByMap": {},
+      "temporaryCylinders": 0
+    },
+    "marina": {
+      "id": "marina",
+      "bait": 0,
+      "cash": 0,
+      "fish": 0,
+      "name": "Marina Maré",
+      "casts": 203,
+      "missions": [],
+      "baitByMap": {},
+      "bonusBait": {},
+      "cylinders": 0,
+      "farmMonth": "2026-09",
+      "inventory": [],
+      "accountType": "telegram",
+      "bonusClaims": [],
+      "monthlyFarm": 0,
+      "pendingCash": 0,
+      "referralCash": 0,
+      "reservedCash": 0,
+      "lastAccruedAt": "2026-09-20T18:57:07.217Z",
+      "temporaryBait": 0,
+      "temporaryCash": 0,
+      "temporaryFish": 0,
+      "referralCounts": [
+        0,
+        0,
+        0
+      ],
+      "referralEarnings": [
+        0,
+        0,
+        0
+      ],
+      "temporaryBaitByMap": {},
+      "temporaryCylinders": 0
+    },
+    "rafael": {
+      "id": "rafael",
+      "bait": 0,
+      "cash": 0,
+      "fish": 0,
+      "name": "Rafael Coral",
+      "casts": 159,
+      "missions": [],
+      "baitByMap": {},
+      "bonusBait": {},
+      "cylinders": 0,
+      "farmMonth": "2026-09",
+      "inventory": [],
+      "accountType": "telegram",
+      "bonusClaims": [],
+      "monthlyFarm": 0,
+      "pendingCash": 0,
+      "referralCash": 0,
+      "reservedCash": 0,
+      "lastAccruedAt": "2026-09-20T18:57:07.217Z",
+      "temporaryBait": 0,
+      "temporaryCash": 0,
+      "temporaryFish": 0,
+      "referralCounts": [
+        0,
+        0,
+        0
+      ],
+      "referralEarnings": [
+        0,
+        0,
+        0
+      ],
+      "temporaryBaitByMap": {},
+      "temporaryCylinders": 0
+    },
+    "capitao": {
+      "id": "capitao",
+      "bait": 0,
+      "cash": 0,
+      "fish": 0,
+      "name": "Capitão Nino",
+      "casts": 181,
+      "missions": [],
+      "baitByMap": {},
+      "bonusBait": {},
+      "cylinders": 0,
+      "farmMonth": "2026-09",
+      "inventory": [],
+      "accountType": "telegram",
+      "bonusClaims": [],
+      "monthlyFarm": 0,
+      "pendingCash": 0,
+      "referralCash": 0,
+      "reservedCash": 0,
+      "lastAccruedAt": "2026-09-20T18:57:07.217Z",
+      "temporaryBait": 0,
+      "temporaryCash": 0,
+      "temporaryFish": 0,
+      "referralCounts": [
+        0,
+        0,
+        0
+      ],
+      "referralEarnings": [
+        0,
+        0,
+        0
+      ],
+      "temporaryBaitByMap": {},
+      "temporaryCylinders": 0
+    },
+    "douglas": {
+      "id": "douglas",
+      "bait": 0,
+      "cash": 0,
+      "fish": 0,
+      "name": "Douglas PIXELPOND",
+      "casts": 230,
+      "missions": [],
+      "baitByMap": {},
+      "bonusBait": {},
+      "cylinders": 0,
+      "farmMonth": "2026-09",
+      "inventory": [],
+      "accountType": "telegram",
+      "bonusClaims": [],
+      "monthlyFarm": 0,
+      "pendingCash": 0,
+      "referralCash": 0,
+      "reservedCash": 0,
+      "lastAccruedAt": "2026-09-20T18:57:07.217Z",
+      "temporaryBait": 0,
+      "temporaryCash": 0,
+      "temporaryFish": 0,
+      "referralCounts": [
+        0,
+        0,
+        0
+      ],
+      "referralEarnings": [
+        0,
+        0,
+        0
+      ],
+      "temporaryBaitByMap": {},
+      "temporaryCylinders": 0
+    },
+    "demo-player": {
+      "id": "demo-player",
+      "bait": 0,
+      "cash": 0,
+      "fish": 0,
+      "name": "Você",
+      "casts": 0,
+      "missions": [],
+      "baitByMap": {},
+      "bonusBait": {},
+      "cylinders": 0,
+      "farmMonth": "2026-09",
+      "inventory": [],
+      "accountType": "telegram",
+      "bonusClaims": [],
+      "monthlyFarm": 0,
+      "pendingCash": 0,
+      "referralCash": 0,
+      "reservedCash": 0,
+      "lastAccruedAt": "2026-09-20T18:57:07.217Z",
+      "temporaryBait": 0,
+      "temporaryCash": 0,
+      "temporaryFish": 0,
+      "referralCounts": [
+        0,
+        0,
+        0
+      ],
+      "referralEarnings": [
+        0,
+        0,
+        0
+      ],
+      "temporaryBaitByMap": {},
+      "temporaryCylinders": 0
+    },
+    "tg:601575133": {
+      "id": "tg:601575133",
+      "bait": 0,
+      "cash": 0,
+      "fish": 0,
+      "name": "Alex Câmara",
+      "casts": 11,
+      "missions": [],
+      "photoUrl": "https://t.me/i/userpic/320/1UlMrCerIeZGd_2sN6pIUT1z6dmvA9EhMyc5hHFAN6Q.svg",
+      "baitByMap": {},
+      "bonusBait": {},
+      "cylinders": 0,
+      "farmMonth": "2026-09",
+      "inventory": [
+        {
+          "id": "b075f6a0-1e28-4aa0-b536-b09db38d9973",
+          "name": "Peixe-vela",
+          "rarity": "Raro",
+          "dailyCash": 325,
+          "temporaryUntil": "2026-09-26T17:25:02.919Z"
+        },
+        {
+          "id": "55c2d830-a7fc-4293-a0e0-b4aebcb5e0ec",
+          "name": "Peixe-vela",
+          "rarity": "Raro",
+          "dailyCash": 325,
+          "temporaryUntil": "2026-09-26T17:25:02.919Z"
+        },
+        {
+          "id": "854e795c-e66a-4a32-a16f-3f2e6c504c38",
+          "name": "Atum azul",
+          "rarity": "Raro",
+          "dailyCash": 325,
+          "temporaryUntil": "2026-09-26T17:25:02.919Z"
+        },
+        {
+          "id": "878ebe52-0876-4bb9-98b5-52f561c6c9a1",
+          "name": "Atum azul",
+          "rarity": "Raro",
+          "dailyCash": 325,
+          "temporaryUntil": "2026-09-26T17:25:02.919Z"
+        },
+        {
+          "id": "565f93c8-f99c-4a4e-a0b7-a34ff818a25a",
+          "name": "Marlim violeta",
+          "rarity": "Épico",
+          "dailyCash": 400,
+          "temporaryUntil": "2026-09-26T17:25:02.919Z"
+        },
+        {
+          "id": "61de4fd0-cf56-43aa-bcd8-ba3e3f861e17",
+          "name": "Peixe-vela",
+          "rarity": "Raro",
+          "dailyCash": 325,
+          "temporaryUntil": "2026-09-26T17:25:02.919Z"
+        },
+        {
+          "id": "51617219-fd2b-4aa6-90d8-f8f07f50562d",
+          "name": "Atum azul",
+          "rarity": "Raro",
+          "dailyCash": 325,
+          "temporaryUntil": "2026-09-26T17:25:02.919Z"
+        },
+        {
+          "id": "6586cf4d-890a-46d9-a4f3-72e8551ccdc8",
+          "name": "Peixe-vela",
+          "rarity": "Raro",
+          "dailyCash": 325,
+          "temporaryUntil": "2026-09-26T17:25:02.919Z"
+        },
+        {
+          "id": "6e6e2ddb-a096-4ca3-b035-044d029c983d",
+          "name": "Atum azul",
+          "rarity": "Raro",
+          "dailyCash": 325,
+          "temporaryUntil": "2026-09-26T17:25:02.919Z"
+        },
+        {
+          "id": "47c37370-d8b2-4c6e-b180-4ae32a126b78",
+          "name": "Atum azul",
+          "rarity": "Raro",
+          "dailyCash": 325,
+          "temporaryUntil": "2026-09-26T17:25:02.919Z"
+        },
+        {
+          "id": "96ee0a98-8c6e-4124-adde-a9e9f9d474d0",
+          "name": "Peixe-vela",
+          "rarity": "Raro",
+          "dailyCash": 325,
+          "temporaryUntil": "2026-09-26T17:25:02.919Z"
+        }
+      ],
+      "referrerId": "tg:8005712857",
+      "accountType": "telegram",
+      "bonusClaims": [
+        "SANDERO"
+      ],
+      "monthlyFarm": 0,
+      "pendingCash": 3876.3525124421285,
+      "referralCash": 0,
+      "reservedCash": 0,
+      "lastAccruedAt": "2026-09-20T18:57:07.218Z",
+      "temporaryBait": 0,
+      "temporaryCash": 5000000,
+      "temporaryFish": 4571000,
+      "referralCounts": [
+        0,
+        0,
+        0
+      ],
+      "temporaryUntil": "2026-09-26T17:25:02.919Z",
+      "referralEarnings": [
+        0,
+        0,
+        0
+      ],
+      "temporaryBaitByMap": {},
+      "temporaryCylinders": 11
+    },
+    "tg:5052988970": {
+      "id": "tg:5052988970",
+      "bait": 0,
+      "cash": 0,
+      "fish": 850,
+      "name": "Wesley #tonfish.net",
+      "casts": 74,
+      "missions": [
+        "daily-login:2026-09-19",
+        "first-catch",
+        "pool-three"
+      ],
+      "photoUrl": "https://t.me/i/userpic/320/e2O01ytcnxjI45k97jSjeMizN2EmKDkv2NsPPnojgyPNk5mNBElmpSqx-JCpIeA7.svg",
+      "baitByMap": {},
+      "bonusBait": {},
+      "cylinders": 0,
+      "farmMonth": "2026-09",
+      "inventory": [
+        {
+          "id": "aa6403e5-4c66-47cd-8ace-4657053ee9f6",
+          "name": "Truta dourada",
+          "rarity": "Comum",
+          "dailyCash": 13,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "613dfb01-f080-4494-bad1-3c072c63cd85",
+          "name": "Truta dourada",
+          "rarity": "Comum",
+          "dailyCash": 13,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "fbc2f9d5-008c-4e55-8277-f39ccddeb775",
+          "name": "Barbo rubro",
+          "rarity": "Raro",
+          "dailyCash": 16.25,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "0ebaa03e-bccf-4f68-862f-065e6c4b5557",
+          "name": "Siluro",
+          "rarity": "Comum",
+          "dailyCash": 13,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "1edb1025-8d0d-4f60-9e2c-4c86c6229060",
+          "name": "Truta dourada",
+          "rarity": "Comum",
+          "dailyCash": 13,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "e8558007-74ce-4236-92f8-27cf31b94679",
+          "name": "Barbo rubro",
+          "rarity": "Raro",
+          "dailyCash": 16.25,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "3836ec5a-7efa-41f2-9fd8-dfa33317680e",
+          "name": "Siluro",
+          "rarity": "Comum",
+          "dailyCash": 13,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "a92abca9-71c3-41df-b8ca-bba225a41231",
+          "name": "Siluro",
+          "rarity": "Comum",
+          "dailyCash": 13,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "5f54da3a-9570-49d6-b6bf-23867579ff74",
+          "name": "Truta dourada",
+          "rarity": "Comum",
+          "dailyCash": 13,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "7619e614-f57d-4012-aefc-09e4f235d444",
+          "name": "Truta dourada",
+          "rarity": "Comum",
+          "dailyCash": 13,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "0b9185ef-f2e9-435a-9dc7-f291054a8d5c",
+          "name": "Siluro",
+          "rarity": "Comum",
+          "dailyCash": 13,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "5a688de9-8de0-4afb-899d-2a32be0c7e4d",
+          "name": "Siluro",
+          "rarity": "Comum",
+          "dailyCash": 13,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "cf3cf96e-3f03-4130-a0ae-28a76bfcb89f",
+          "name": "Truta dourada",
+          "rarity": "Comum",
+          "dailyCash": 13,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "be1495bc-4ccd-4cc4-8e5f-facd6cf5d2ec",
+          "name": "Barbo rubro",
+          "rarity": "Raro",
+          "dailyCash": 16.25,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "f52120eb-6ddf-4084-acd9-facaf0393c8d",
+          "name": "Siluro",
+          "rarity": "Comum",
+          "dailyCash": 13,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "0f677239-9836-4187-b73e-4cb592a9be16",
+          "name": "Siluro",
+          "rarity": "Comum",
+          "dailyCash": 13,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "dde45f87-70dd-4a6e-9535-6e104ec56651",
+          "name": "Siluro",
+          "rarity": "Comum",
+          "dailyCash": 13,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "1a6dbf74-65ce-43b1-8da8-941a3a7452ab",
+          "name": "Atum azul",
+          "rarity": "Raro",
+          "dailyCash": 325,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "bff25576-7570-4237-80b1-d3c2c738160e",
+          "name": "Peixe-vela",
+          "rarity": "Raro",
+          "dailyCash": 325,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "65fd8b47-df04-4b7d-85d4-2d794150bb21",
+          "name": "Peixe-vela",
+          "rarity": "Raro",
+          "dailyCash": 325,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "d89951c7-79a5-4a64-bdb1-9980529072ca",
+          "name": "Atum azul",
+          "rarity": "Raro",
+          "dailyCash": 325,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "e8756308-e6d0-4f61-8a79-3ee6e7b9a60a",
+          "name": "Peixe-vela",
+          "rarity": "Raro",
+          "dailyCash": 325,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "71ba7cc5-e3e0-4ae7-9421-63f402df0931",
+          "name": "Marlim violeta",
+          "rarity": "Épico",
+          "dailyCash": 400,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "d425d5eb-1663-4e14-839e-6654bb7253a2",
+          "name": "Atum azul",
+          "rarity": "Raro",
+          "dailyCash": 325,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "5f2a29fd-9b9c-4e38-9bbd-f0d7621028f1",
+          "name": "Atum azul",
+          "rarity": "Raro",
+          "dailyCash": 325,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "d900c69a-5c87-4247-8acc-b0590a9273ac",
+          "name": "Atum azul",
+          "rarity": "Raro",
+          "dailyCash": 325,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "12d24457-50a1-4e9f-8de2-c5ddf6933772",
+          "name": "Atum azul",
+          "rarity": "Raro",
+          "dailyCash": 325,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "d63ab124-8c68-4cb4-8604-ceff11572147",
+          "name": "Peixe-vela",
+          "rarity": "Raro",
+          "dailyCash": 325,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "93a6ef16-7a4c-45a2-a751-3f3a3ddf611c",
+          "name": "Peixe-caixa",
+          "rarity": "Raro",
+          "dailyCash": 162.5,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "9da47758-0aa0-4a39-acc5-77e5f0c1afa6",
+          "name": "Escorpião",
+          "rarity": "Raro",
+          "dailyCash": 162.5,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "c9aebe86-8456-4f8a-813e-a60e2959b8c6",
+          "name": "Dourada",
+          "rarity": "Épico",
+          "dailyCash": 200,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "09714fab-68ce-4bb7-b98c-4b798b69d4c9",
+          "name": "Escorpião",
+          "rarity": "Raro",
+          "dailyCash": 162.5,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "1cd2197f-a871-4210-85ac-bea6fbd697fa",
+          "name": "Peixe-caixa",
+          "rarity": "Raro",
+          "dailyCash": 162.5,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "0a069fd5-25d6-4c00-99e1-cc6471f303a1",
+          "name": "Atum azul",
+          "rarity": "Raro",
+          "dailyCash": 325,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "9c1b47d0-7c3d-47e4-9192-6197e2b5be30",
+          "name": "Peixe-vela",
+          "rarity": "Raro",
+          "dailyCash": 325,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "a209b465-d201-4c5c-bd15-65dd369a9543",
+          "name": "Atum azul",
+          "rarity": "Raro",
+          "dailyCash": 325,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "7a168a28-b6f3-428b-ab4c-16b8e9af5a33",
+          "name": "Peixe-vela",
+          "rarity": "Raro",
+          "dailyCash": 325,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "5cac5fdf-6c82-4911-898b-38bad340bfaf",
+          "name": "Atum azul",
+          "rarity": "Raro",
+          "dailyCash": 325,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "52c1bf13-2346-4f79-b943-ac2718c16c72",
+          "name": "Peixe-vela",
+          "rarity": "Raro",
+          "dailyCash": 325,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "fd063c78-812c-4aa4-8189-f61e70e348ee",
+          "name": "Peixe-vela",
+          "rarity": "Raro",
+          "dailyCash": 325,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "7b089aa2-5d91-4582-bd65-9d5a32963cd9",
+          "name": "Marlim violeta",
+          "rarity": "Épico",
+          "dailyCash": 400,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "02c4fe6f-f870-49ec-b08a-6450f2c545ac",
+          "name": "Atum azul",
+          "rarity": "Raro",
+          "dailyCash": 325,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "5347d512-1b87-4bcc-ba52-4f2828ea4f74",
+          "name": "Peixe-vela",
+          "rarity": "Raro",
+          "dailyCash": 325,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "d17ec941-cfbc-4061-85aa-bb8c2ca4e57b",
+          "name": "Atum azul",
+          "rarity": "Raro",
+          "dailyCash": 325,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "49de5741-48ca-42b4-8c14-fd446191fe12",
+          "name": "Peixe-vela",
+          "rarity": "Raro",
+          "dailyCash": 325,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "6a648dee-50c2-488e-970a-33ce3c2307ed",
+          "name": "Atum azul",
+          "rarity": "Raro",
+          "dailyCash": 325,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "cd36fbf2-8344-4922-bd5a-3058df366e0e",
+          "name": "Marlim violeta",
+          "rarity": "Épico",
+          "dailyCash": 400,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "36006f7b-6e4f-4688-a49b-fe78647db40c",
+          "name": "Marlim violeta",
+          "rarity": "Épico",
+          "dailyCash": 400,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "fabd2db8-ebe9-46de-aa7f-d89ee20a4617",
+          "name": "Marlim violeta",
+          "rarity": "Épico",
+          "dailyCash": 400,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "3fa3e2ae-5633-4d7b-8bae-2eb67e93a600",
+          "name": "Atum azul",
+          "rarity": "Raro",
+          "dailyCash": 325,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "3f578521-599c-4624-bdfa-61e831aebc7a",
+          "name": "Peixe-vela",
+          "rarity": "Raro",
+          "dailyCash": 325,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "c051e04c-0304-442c-bd4b-8d0ce26d65f1",
+          "name": "Peixe-vela",
+          "rarity": "Raro",
+          "dailyCash": 325,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "252d1665-59a1-40e9-abaa-ac16398acfc8",
+          "name": "Peixe-vela",
+          "rarity": "Raro",
+          "dailyCash": 325,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "ef35732b-20d8-4cd3-8e70-88bec7e017dd",
+          "name": "Peixe-vela",
+          "rarity": "Raro",
+          "dailyCash": 325,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "919d7b5f-15da-49b9-9e97-95e140035fd5",
+          "name": "Marlim violeta",
+          "rarity": "Épico",
+          "dailyCash": 400,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "fb9a1848-93f3-4b19-ac37-90e7632c670c",
+          "name": "Dragão abissal",
+          "rarity": "Lendário",
+          "dailyCash": 21,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "6386c99e-e7ca-42fe-ae25-87c4955c4bc1",
+          "name": "Dragão abissal",
+          "rarity": "Lendário",
+          "dailyCash": 21,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "315f329b-7de4-4f12-af67-4bc19d814e48",
+          "name": "Peixe-lanterna",
+          "rarity": "Épico",
+          "dailyCash": 21,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "499f224e-3c42-4df1-a85d-dbefa846b421",
+          "name": "Peixe-vela",
+          "rarity": "Raro",
+          "dailyCash": 325,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "b6777a68-5f16-4ccc-bde8-e5b3fb228402",
+          "name": "Peixe-vela",
+          "rarity": "Raro",
+          "dailyCash": 325,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "8b89b56d-7619-4fa8-a0ea-b348b03fac1d",
+          "name": "Peixe-vela",
+          "rarity": "Raro",
+          "dailyCash": 325,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "59a05fa0-ed18-4e98-95de-1d8e97efda70",
+          "name": "Peixe-vela",
+          "rarity": "Raro",
+          "dailyCash": 325,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "d0ae642d-283b-4417-82c5-3671376dfa8c",
+          "name": "Marlim violeta",
+          "rarity": "Épico",
+          "dailyCash": 400,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "a0de4012-2fd3-4b28-a5d6-4ab66e4c1af2",
+          "name": "Atum azul",
+          "rarity": "Raro",
+          "dailyCash": 325,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "de40eec5-5451-4fad-b67a-e77d4f789a4e",
+          "name": "Marlim violeta",
+          "rarity": "Épico",
+          "dailyCash": 400,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "105c0e4e-2a1e-46bf-bb3f-e2f9fe2fd4d2",
+          "name": "Peixe-vela",
+          "rarity": "Raro",
+          "dailyCash": 325,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "93d4fd53-729b-4107-8c40-a9addb988237",
+          "name": "Atum azul",
+          "rarity": "Raro",
+          "dailyCash": 325,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "6eccf857-c596-470a-b738-bab46dc6b6f8",
+          "name": "Rainha abissal",
+          "rarity": "Lendário",
+          "dailyCash": 600,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "7cac68c0-236b-4fbe-a3b0-7d797de987c7",
+          "name": "Marlim violeta",
+          "rarity": "Épico",
+          "dailyCash": 400,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "57deea68-1cd5-4d0a-9644-e95b684dab87",
+          "name": "Atum azul",
+          "rarity": "Raro",
+          "dailyCash": 325,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "4c79220a-a082-4525-8a45-88465b826e4b",
+          "name": "Peixe-vela",
+          "rarity": "Raro",
+          "dailyCash": 325,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "c0ec5dc1-d5f4-48e6-baf3-7b7e6f43edf6",
+          "name": "Peixe-vela",
+          "rarity": "Raro",
+          "dailyCash": 325,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "b6457832-7ce8-4fcb-96e3-db1b3349ea57",
+          "name": "Atum azul",
+          "rarity": "Raro",
+          "dailyCash": 325,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        },
+        {
+          "id": "32f4415a-25c7-4de9-872c-648f72972258",
+          "name": "Atum azul",
+          "rarity": "Raro",
+          "dailyCash": 325,
+          "temporaryUntil": "2026-09-26T18:44:52.492Z"
+        }
+      ],
+      "referrerId": "tg:8005712857",
+      "accountType": "telegram",
+      "bonusClaims": [
+        "NERDLOCUTOR"
+      ],
+      "monthlyFarm": 0,
+      "pendingCash": 16325.064137971638,
+      "referralCash": 0,
+      "reservedCash": 0,
+      "lastAccruedAt": "2026-09-20T18:57:07.218Z",
+      "temporaryBait": 0,
+      "temporaryCash": 5000000,
+      "temporaryFish": 3495900,
+      "referralCounts": [
+        0,
+        0,
+        0
+      ],
+      "temporaryUntil": "2026-09-26T18:44:52.492Z",
+      "referralEarnings": [
+        0,
+        0,
+        0
+      ],
+      "temporaryBaitByMap": {
+        "coast": 0,
+        "ocean": 0,
+        "river": 0
+      },
+      "temporaryCylinders": 0
+    },
+    "tg:7751412626": {
+      "id": "tg:7751412626",
+      "bait": 0,
+      "cash": 0,
+      "fish": 100,
+      "name": "PIXELPOND🐟 Fantinati",
+      "casts": 12,
+      "missions": [
+        "daily-login:2026-09-19"
+      ],
+      "photoUrl": "https://t.me/i/userpic/320/aclHOnsBGMj4rWlh-x6p5ZHLqCtnkKNS2-LNCIMfhGsywt4GXRG_w2x8HP04wqkA.svg",
+      "baitByMap": {},
+      "bonusBait": {},
+      "cylinders": 0,
+      "farmMonth": "2026-09",
+      "inventory": [
+        {
+          "id": "3954e9b4-3cbd-4c44-8a40-bb715558c836",
+          "name": "Atum azul",
+          "rarity": "Raro",
+          "dailyCash": 325,
+          "temporaryUntil": "2026-09-26T05:35:58.637Z"
+        },
+        {
+          "id": "34be68da-bf59-474e-8c13-3b9a40644665",
+          "name": "Peixe-vela",
+          "rarity": "Raro",
+          "dailyCash": 325,
+          "temporaryUntil": "2026-09-26T05:35:58.637Z"
+        },
+        {
+          "id": "fd1a93fe-62a1-44c2-ad12-91cbb1d186d8",
+          "name": "Atum azul",
+          "rarity": "Raro",
+          "dailyCash": 325,
+          "temporaryUntil": "2026-09-26T05:35:58.637Z"
+        },
+        {
+          "id": "b0218300-7cb8-4464-bffa-4c1055ddf655",
+          "name": "Siluro",
+          "rarity": "Comum",
+          "dailyCash": 13,
+          "temporaryUntil": "2026-09-26T05:35:58.637Z"
+        },
+        {
+          "id": "93a8eedb-96cb-4d47-a8b7-2b21a78695f4",
+          "name": "Siluro",
+          "rarity": "Comum",
+          "dailyCash": 13,
+          "temporaryUntil": "2026-09-26T05:35:58.637Z"
+        },
+        {
+          "id": "ae7c9148-f0fe-4742-84a1-2e9e72634eb7",
+          "name": "Peixe-vela",
+          "rarity": "Raro",
+          "dailyCash": 325,
+          "temporaryUntil": "2026-09-26T05:35:58.637Z"
+        },
+        {
+          "id": "10d73f59-0cab-4fb0-bfc9-972eca7abd3f",
+          "name": "Marlim violeta",
+          "rarity": "Épico",
+          "dailyCash": 400,
+          "temporaryUntil": "2026-09-26T05:35:58.637Z"
+        },
+        {
+          "id": "8a0e22e9-f922-4e86-8f55-90f9e3c5dcd6",
+          "name": "Marlim violeta",
+          "rarity": "Épico",
+          "dailyCash": 400,
+          "temporaryUntil": "2026-09-26T05:35:58.637Z"
+        },
+        {
+          "id": "4f46836b-358c-435a-bf35-6e20a5d5e885",
+          "name": "Atum azul",
+          "rarity": "Raro",
+          "dailyCash": 325,
+          "temporaryUntil": "2026-09-26T05:35:58.637Z"
+        },
+        {
+          "id": "bda8d27b-805a-4d80-962a-0640e0a828ed",
+          "name": "Peixe-vela",
+          "rarity": "Raro",
+          "dailyCash": 325,
+          "temporaryUntil": "2026-09-26T05:35:58.637Z"
+        },
+        {
+          "id": "a249ba2f-948a-4f16-ba37-468dfff7b1a7",
+          "name": "Peixe-vela",
+          "rarity": "Raro",
+          "dailyCash": 325,
+          "temporaryUntil": "2026-09-26T05:35:58.637Z"
+        },
+        {
+          "id": "f49421b5-4ffb-4735-b2c0-f8b6aea6fb2c",
+          "name": "Atum azul",
+          "rarity": "Raro",
+          "dailyCash": 325,
+          "temporaryUntil": "2026-09-26T05:35:58.637Z"
+        }
+      ],
+      "referrerId": "tg:8005712857",
+      "accountType": "telegram",
+      "bonusClaims": [
+        "RIOFANTI"
+      ],
+      "monthlyFarm": 0,
+      "pendingCash": 3880.2142035532383,
+      "referralCash": 0,
+      "reservedCash": 0,
+      "lastAccruedAt": "2026-09-20T18:57:07.219Z",
+      "temporaryBait": 0,
+      "temporaryCash": 5000000,
+      "temporaryFish": 4142000,
+      "referralCounts": [
+        0,
+        0,
+        0
+      ],
+      "temporaryUntil": "2026-09-26T05:35:58.637Z",
+      "referralEarnings": [
+        0,
+        0,
+        0
+      ],
+      "temporaryBaitByMap": {
+        "ocean": 5,
+        "river": 16
+      },
+      "temporaryCylinders": 0
+    },
+    "tg:8005712857": {
+      "id": "tg:8005712857",
+      "bait": 0,
+      "cash": 10015.96256448208,
+      "fish": 29550,
+      "name": "Rio PIXELPOND🐟",
+      "casts": 33,
+      "missions": [
+        "daily-login:2026-09-19",
+        "first-catch",
+        "invite-one",
+        "pool-three",
+        "daily-login:2026-09-20"
+      ],
+      "photoUrl": "https://t.me/i/userpic/320/2J7sJ0xyw0bLGKxGlbI1z3g16Lj7vhF6V5vPrZjmCoUFO8CKn1dzVNlISFCwe5ni.svg",
+      "baitByMap": {},
+      "bonusBait": {},
+      "cylinders": 0,
+      "farmMonth": "2026-09",
+      "inventory": [
+        {
+          "id": "d3e02c17-a745-4ee3-98b3-b6b07ba8ef45",
+          "name": "Dragão abissal",
+          "rarity": "Lendário",
+          "dailyCash": 330,
+          "temporaryUntil": "2026-09-26T05:14:56.513Z"
+        },
+        {
+          "id": "e007828f-2644-46e6-9cba-9560d52f4254",
+          "name": "Dragão abissal",
+          "rarity": "Lendário",
+          "dailyCash": 330,
+          "temporaryUntil": "2026-09-26T05:14:56.513Z"
+        },
+        {
+          "id": "565cc689-f46e-4135-af75-cd58bdf72fa9",
+          "name": "Dragão abissal",
+          "rarity": "Lendário",
+          "dailyCash": 330,
+          "temporaryUntil": "2026-09-26T05:14:56.513Z"
+        },
+        {
+          "id": "0ba193e3-e322-45a8-883f-915f02497be3",
+          "name": "Dragão abissal",
+          "rarity": "Lendário",
+          "dailyCash": 330,
+          "temporaryUntil": "2026-09-26T05:14:56.513Z"
+        },
+        {
+          "id": "d00b242f-645d-405f-b20b-138974840fff",
+          "name": "Siluro",
+          "rarity": "Comum",
+          "dailyCash": 13,
+          "temporaryUntil": "2026-09-26T05:14:56.513Z"
+        },
+        {
+          "id": "2bd38c0e-e470-4f19-bfdc-42bb766713e6",
+          "name": "Dragão abissal",
+          "rarity": "Lendário",
+          "dailyCash": 21,
+          "temporaryUntil": "2026-09-26T17:23:43.490Z"
+        },
+        {
+          "id": "d22146b6-50df-47cf-b5ee-1777976fad12",
+          "name": "Marlim violeta",
+          "rarity": "Épico",
+          "dailyCash": 400,
+          "temporaryUntil": "2026-09-26T17:23:43.490Z"
+        },
+        {
+          "id": "db2ba026-99c3-43a0-8abb-c646693709f6",
+          "name": "Marlim violeta",
+          "rarity": "Épico",
+          "dailyCash": 400,
+          "temporaryUntil": "2026-09-26T17:23:43.490Z"
+        },
+        {
+          "id": "f6512bc0-aa1e-45b7-9de9-bccf3a06fb39",
+          "name": "Peixe-vela",
+          "rarity": "Raro",
+          "dailyCash": 325,
+          "temporaryUntil": "2026-09-26T17:23:43.490Z"
+        },
+        {
+          "id": "f8c0bae4-5a77-4667-a788-6b880e629cff",
+          "name": "Peixe-vela",
+          "rarity": "Raro",
+          "dailyCash": 325,
+          "temporaryUntil": "2026-09-26T17:23:43.490Z"
+        },
+        {
+          "id": "3bfe7317-3f07-4bf6-b125-808080dbed33",
+          "name": "Atum azul",
+          "rarity": "Raro",
+          "dailyCash": 325,
+          "temporaryUntil": "2026-09-26T17:23:43.490Z"
+        },
+        {
+          "id": "b5ee7af7-8c3e-42e2-8a34-696f0b11b14b",
+          "name": "Peixe-vela",
+          "rarity": "Raro",
+          "dailyCash": 325,
+          "temporaryUntil": "2026-09-26T17:23:43.490Z"
+        },
+        {
+          "id": "849a9f17-e73e-4fd2-be92-7869fcd57647",
+          "name": "Marlim violeta",
+          "rarity": "Épico",
+          "dailyCash": 400,
+          "temporaryUntil": "2026-09-26T17:23:43.490Z"
+        },
+        {
+          "id": "408325ed-734d-4144-83dc-9e7dbc88b920",
+          "name": "Atum azul",
+          "rarity": "Raro",
+          "dailyCash": 325,
+          "temporaryUntil": "2026-09-26T17:23:43.490Z"
+        }
+      ],
+      "accountType": "telegram",
+      "bonusClaims": [
+        "TESTERIO20000",
+        "RIOFANTI",
+        "SANDERO"
+      ],
+      "monthlyFarm": 6615.962564482081,
+      "pendingCash": 162.4513697916667,
+      "referralCash": 0,
+      "reservedCash": 0,
+      "lastAccruedAt": "2026-09-20T19:13:09.587Z",
+      "temporaryBait": 0,
+      "temporaryCash": 9999000,
+      "temporaryFish": 8831100,
+      "referralCounts": [
+        3,
+        0,
+        0
+      ],
+      "temporaryUntil": "2026-09-26T17:23:43.490Z",
+      "referralEarnings": [
+        0,
+        0,
+        0
+      ],
+      "temporaryBaitByMap": {
+        "lake": 1,
+        "ocean": 0,
+        "river": 10
+      },
+      "temporaryCylinders": 10
+    },
+    "dev:local-player": {
+      "id": "dev:local-player",
+      "bait": 0,
+      "cash": 0,
+      "fish": 0,
+      "name": "Jogador local",
+      "casts": 0,
+      "missions": [],
+      "baitByMap": {},
+      "bonusBait": {},
+      "cylinders": 0,
+      "farmMonth": "2026-09",
+      "inventory": [],
+      "accountType": "local_dev",
+      "bonusClaims": [],
+      "monthlyFarm": 0,
+      "pendingCash": 0,
+      "referralCash": 0,
+      "reservedCash": 0,
+      "lastAccruedAt": "2026-09-20T18:57:07.219Z",
+      "temporaryBait": 0,
+      "temporaryCash": 0,
+      "temporaryFish": 0,
+      "referralCounts": [
+        0,
+        0,
+        0
+      ],
+      "referralEarnings": [
+        0,
+        0,
+        0
+      ],
+      "temporaryBaitByMap": {},
+      "temporaryCylinders": 0
+    },
+    "web:069cbd8bc218497286c14cf711f81177": {
+      "id": "web:069cbd8bc218497286c14cf711f81177",
+      "bait": 0,
+      "cash": 0,
+      "fish": 0,
+      "name": "Visitante",
+      "casts": 0,
+      "missions": [],
+      "baitByMap": {},
+      "bonusBait": {},
+      "cylinders": 0,
+      "farmMonth": "2026-09",
+      "inventory": [],
+      "accountType": "web_guest",
+      "bonusClaims": [],
+      "monthlyFarm": 0,
+      "pendingCash": 0,
+      "referralCash": 0,
+      "reservedCash": 0,
+      "lastAccruedAt": "2026-09-20T18:57:07.219Z",
+      "temporaryBait": 0,
+      "temporaryCash": 0,
+      "temporaryFish": 0,
+      "referralCounts": [
+        0,
+        0,
+        0
+      ],
+      "referralEarnings": [
+        0,
+        0,
+        0
+      ],
+      "temporaryBaitByMap": {},
+      "temporaryCylinders": 0
+    },
+    "web:0f19da9c3ae044bd8fd50fb091a7b086": {
+      "id": "web:0f19da9c3ae044bd8fd50fb091a7b086",
+      "bait": 0,
+      "cash": 0,
+      "fish": 0,
+      "name": "Visitante",
+      "casts": 0,
+      "missions": [],
+      "baitByMap": {},
+      "bonusBait": {},
+      "cylinders": 0,
+      "farmMonth": "2026-09",
+      "inventory": [],
+      "accountType": "web_guest",
+      "bonusClaims": [],
+      "monthlyFarm": 0,
+      "pendingCash": 0,
+      "referralCash": 0,
+      "reservedCash": 0,
+      "lastAccruedAt": "2026-09-20T18:57:07.219Z",
+      "temporaryBait": 0,
+      "temporaryCash": 0,
+      "temporaryFish": 0,
+      "referralCounts": [
+        0,
+        0,
+        0
+      ],
+      "referralEarnings": [
+        0,
+        0,
+        0
+      ],
+      "temporaryBaitByMap": {},
+      "temporaryCylinders": 0
+    },
+    "web:0fa9d97471f54b6f8a4f0fbf24707c2a": {
+      "id": "web:0fa9d97471f54b6f8a4f0fbf24707c2a",
+      "bait": 0,
+      "cash": 0,
+      "fish": 0,
+      "name": "Visitante",
+      "casts": 0,
+      "missions": [],
+      "baitByMap": {},
+      "bonusBait": {},
+      "cylinders": 0,
+      "farmMonth": "2026-09",
+      "inventory": [],
+      "accountType": "web_guest",
+      "bonusClaims": [],
+      "monthlyFarm": 0,
+      "pendingCash": 0,
+      "referralCash": 0,
+      "reservedCash": 0,
+      "lastAccruedAt": "2026-09-20T18:57:07.219Z",
+      "temporaryBait": 0,
+      "temporaryCash": 0,
+      "temporaryFish": 0,
+      "referralCounts": [
+        0,
+        0,
+        0
+      ],
+      "referralEarnings": [
+        0,
+        0,
+        0
+      ],
+      "temporaryBaitByMap": {},
+      "temporaryCylinders": 0
+    },
+    "web:187d27603351408eaa85e191812135da": {
+      "id": "web:187d27603351408eaa85e191812135da",
+      "bait": 0,
+      "cash": 0,
+      "fish": 0,
+      "name": "Visitante",
+      "casts": 0,
+      "missions": [],
+      "baitByMap": {},
+      "bonusBait": {},
+      "cylinders": 0,
+      "farmMonth": "2026-09",
+      "inventory": [],
+      "accountType": "web_guest",
+      "bonusClaims": [],
+      "monthlyFarm": 0,
+      "pendingCash": 0,
+      "referralCash": 0,
+      "reservedCash": 0,
+      "lastAccruedAt": "2026-09-20T18:57:07.219Z",
+      "temporaryBait": 0,
+      "temporaryCash": 0,
+      "temporaryFish": 0,
+      "referralCounts": [
+        0,
+        0,
+        0
+      ],
+      "referralEarnings": [
+        0,
+        0,
+        0
+      ],
+      "temporaryBaitByMap": {},
+      "temporaryCylinders": 0
+    },
+    "web:2e2044e36f2b40cfb2c1b82537085458": {
+      "id": "web:2e2044e36f2b40cfb2c1b82537085458",
+      "bait": 0,
+      "cash": 0,
+      "fish": 0,
+      "name": "Visitante",
+      "casts": 0,
+      "missions": [],
+      "baitByMap": {},
+      "bonusBait": {},
+      "cylinders": 0,
+      "farmMonth": "2026-09",
+      "inventory": [],
+      "accountType": "web_guest",
+      "bonusClaims": [],
+      "monthlyFarm": 0,
+      "pendingCash": 0,
+      "referralCash": 0,
+      "reservedCash": 0,
+      "lastAccruedAt": "2026-09-20T18:57:07.219Z",
+      "temporaryBait": 0,
+      "temporaryCash": 0,
+      "temporaryFish": 0,
+      "referralCounts": [
+        0,
+        0,
+        0
+      ],
+      "referralEarnings": [
+        0,
+        0,
+        0
+      ],
+      "temporaryBaitByMap": {},
+      "temporaryCylinders": 0
+    },
+    "web:43989a9c19874af5a0418689f511af17": {
+      "id": "web:43989a9c19874af5a0418689f511af17",
+      "bait": 0,
+      "cash": 0,
+      "fish": 0,
+      "name": "Visitante",
+      "casts": 0,
+      "missions": [],
+      "baitByMap": {},
+      "bonusBait": {},
+      "cylinders": 0,
+      "farmMonth": "2026-09",
+      "inventory": [],
+      "accountType": "web_guest",
+      "bonusClaims": [],
+      "monthlyFarm": 0,
+      "pendingCash": 0,
+      "referralCash": 0,
+      "reservedCash": 0,
+      "lastAccruedAt": "2026-09-20T18:57:07.219Z",
+      "temporaryBait": 0,
+      "temporaryCash": 0,
+      "temporaryFish": 0,
+      "referralCounts": [
+        0,
+        0,
+        0
+      ],
+      "referralEarnings": [
+        0,
+        0,
+        0
+      ],
+      "temporaryBaitByMap": {},
+      "temporaryCylinders": 0
+    },
+    "web:749935c4a4c441e6a56470258407127d": {
+      "id": "web:749935c4a4c441e6a56470258407127d",
+      "bait": 0,
+      "cash": 0,
+      "fish": 0,
+      "name": "Visitante",
+      "casts": 0,
+      "missions": [],
+      "baitByMap": {},
+      "bonusBait": {},
+      "cylinders": 0,
+      "farmMonth": "2026-09",
+      "inventory": [],
+      "accountType": "web_guest",
+      "bonusClaims": [],
+      "monthlyFarm": 0,
+      "pendingCash": 0,
+      "referralCash": 0,
+      "reservedCash": 0,
+      "lastAccruedAt": "2026-09-20T18:57:07.219Z",
+      "temporaryBait": 0,
+      "temporaryCash": 0,
+      "temporaryFish": 0,
+      "referralCounts": [
+        0,
+        0,
+        0
+      ],
+      "referralEarnings": [
+        0,
+        0,
+        0
+      ],
+      "temporaryBaitByMap": {},
+      "temporaryCylinders": 0
+    },
+    "web:78c309c2dd6a496a86f408ae2898897a": {
+      "id": "web:78c309c2dd6a496a86f408ae2898897a",
+      "bait": 0,
+      "cash": 0,
+      "fish": 0,
+      "name": "Visitante",
+      "casts": 0,
+      "missions": [],
+      "baitByMap": {},
+      "bonusBait": {},
+      "cylinders": 0,
+      "farmMonth": "2026-09",
+      "inventory": [],
+      "accountType": "web_guest",
+      "bonusClaims": [],
+      "monthlyFarm": 0,
+      "pendingCash": 0,
+      "referralCash": 0,
+      "reservedCash": 0,
+      "lastAccruedAt": "2026-09-20T18:57:07.219Z",
+      "temporaryBait": 0,
+      "temporaryCash": 0,
+      "temporaryFish": 0,
+      "referralCounts": [
+        0,
+        0,
+        0
+      ],
+      "referralEarnings": [
+        0,
+        0,
+        0
+      ],
+      "temporaryBaitByMap": {},
+      "temporaryCylinders": 0
+    },
+    "web:7fdd22d6d93942408d09a67157747e80": {
+      "id": "web:7fdd22d6d93942408d09a67157747e80",
+      "bait": 0,
+      "cash": 0,
+      "fish": 0,
+      "name": "Visitante",
+      "casts": 0,
+      "missions": [],
+      "baitByMap": {},
+      "bonusBait": {},
+      "cylinders": 0,
+      "farmMonth": "2026-09",
+      "inventory": [],
+      "accountType": "web_guest",
+      "bonusClaims": [],
+      "monthlyFarm": 0,
+      "pendingCash": 0,
+      "referralCash": 0,
+      "reservedCash": 0,
+      "lastAccruedAt": "2026-09-20T18:57:07.219Z",
+      "temporaryBait": 0,
+      "temporaryCash": 0,
+      "temporaryFish": 0,
+      "referralCounts": [
+        0,
+        0,
+        0
+      ],
+      "referralEarnings": [
+        0,
+        0,
+        0
+      ],
+      "temporaryBaitByMap": {},
+      "temporaryCylinders": 0
+    },
+    "web:7fe22f395cc0474bb388632f15c41185": {
+      "id": "web:7fe22f395cc0474bb388632f15c41185",
+      "bait": 0,
+      "cash": 0,
+      "fish": 0,
+      "name": "Visitante",
+      "casts": 0,
+      "missions": [],
+      "baitByMap": {},
+      "bonusBait": {},
+      "cylinders": 0,
+      "farmMonth": "2026-09",
+      "inventory": [],
+      "accountType": "web_guest",
+      "bonusClaims": [],
+      "monthlyFarm": 0,
+      "pendingCash": 0,
+      "referralCash": 0,
+      "reservedCash": 0,
+      "lastAccruedAt": "2026-09-20T18:57:07.219Z",
+      "temporaryBait": 0,
+      "temporaryCash": 0,
+      "temporaryFish": 0,
+      "referralCounts": [
+        0,
+        0,
+        0
+      ],
+      "referralEarnings": [
+        0,
+        0,
+        0
+      ],
+      "temporaryBaitByMap": {},
+      "temporaryCylinders": 0
+    },
+    "web:81be84e3ff90416b8f9bd968d894a3f6": {
+      "id": "web:81be84e3ff90416b8f9bd968d894a3f6",
+      "bait": 0,
+      "cash": 0,
+      "fish": 0,
+      "name": "Visitante",
+      "casts": 0,
+      "missions": [],
+      "baitByMap": {},
+      "bonusBait": {},
+      "cylinders": 0,
+      "farmMonth": "2026-09",
+      "inventory": [],
+      "accountType": "web_guest",
+      "bonusClaims": [],
+      "monthlyFarm": 0,
+      "pendingCash": 0,
+      "referralCash": 0,
+      "reservedCash": 0,
+      "lastAccruedAt": "2026-09-20T18:57:07.219Z",
+      "temporaryBait": 0,
+      "temporaryCash": 0,
+      "temporaryFish": 0,
+      "referralCounts": [
+        0,
+        0,
+        0
+      ],
+      "referralEarnings": [
+        0,
+        0,
+        0
+      ],
+      "temporaryBaitByMap": {},
+      "temporaryCylinders": 0
+    },
+    "web:83c39fed13954ee6a6ce7be9330543b4": {
+      "id": "web:83c39fed13954ee6a6ce7be9330543b4",
+      "bait": 0,
+      "cash": 0,
+      "fish": 0,
+      "name": "Visitante",
+      "casts": 0,
+      "missions": [],
+      "baitByMap": {},
+      "bonusBait": {},
+      "cylinders": 0,
+      "farmMonth": "2026-09",
+      "inventory": [],
+      "accountType": "web_guest",
+      "bonusClaims": [],
+      "monthlyFarm": 0,
+      "pendingCash": 0,
+      "referralCash": 0,
+      "reservedCash": 0,
+      "lastAccruedAt": "2026-09-20T18:57:07.219Z",
+      "temporaryBait": 0,
+      "temporaryCash": 0,
+      "temporaryFish": 0,
+      "referralCounts": [
+        0,
+        0,
+        0
+      ],
+      "referralEarnings": [
+        0,
+        0,
+        0
+      ],
+      "temporaryBaitByMap": {},
+      "temporaryCylinders": 0
+    },
+    "web:9bc8339bf2e14fd1a9aa0a5bc669ce48": {
+      "id": "web:9bc8339bf2e14fd1a9aa0a5bc669ce48",
+      "bait": 0,
+      "cash": 0,
+      "fish": 0,
+      "name": "Visitante",
+      "casts": 0,
+      "missions": [],
+      "baitByMap": {},
+      "bonusBait": {},
+      "cylinders": 0,
+      "farmMonth": "2026-09",
+      "inventory": [],
+      "accountType": "web_guest",
+      "bonusClaims": [],
+      "monthlyFarm": 0,
+      "pendingCash": 0,
+      "referralCash": 0,
+      "reservedCash": 0,
+      "lastAccruedAt": "2026-09-20T18:57:07.219Z",
+      "temporaryBait": 0,
+      "temporaryCash": 0,
+      "temporaryFish": 0,
+      "referralCounts": [
+        0,
+        0,
+        0
+      ],
+      "referralEarnings": [
+        0,
+        0,
+        0
+      ],
+      "temporaryBaitByMap": {},
+      "temporaryCylinders": 0
+    },
+    "web:9e3d8c7248e844e998e21e51610b6b87": {
+      "id": "web:9e3d8c7248e844e998e21e51610b6b87",
+      "bait": 0,
+      "cash": 0,
+      "fish": 0,
+      "name": "Visitante",
+      "casts": 0,
+      "missions": [],
+      "baitByMap": {},
+      "bonusBait": {},
+      "cylinders": 0,
+      "farmMonth": "2026-09",
+      "inventory": [],
+      "accountType": "web_guest",
+      "bonusClaims": [],
+      "monthlyFarm": 0,
+      "pendingCash": 0,
+      "referralCash": 0,
+      "reservedCash": 0,
+      "lastAccruedAt": "2026-09-20T18:57:07.219Z",
+      "temporaryBait": 0,
+      "temporaryCash": 0,
+      "temporaryFish": 0,
+      "referralCounts": [
+        0,
+        0,
+        0
+      ],
+      "referralEarnings": [
+        0,
+        0,
+        0
+      ],
+      "temporaryBaitByMap": {},
+      "temporaryCylinders": 0
+    },
+    "web:c0e092e8afcc49838c08afe7f4ae7ab5": {
+      "id": "web:c0e092e8afcc49838c08afe7f4ae7ab5",
+      "bait": 0,
+      "cash": 0,
+      "fish": 0,
+      "name": "Visitante",
+      "casts": 0,
+      "missions": [],
+      "baitByMap": {},
+      "bonusBait": {},
+      "cylinders": 0,
+      "farmMonth": "2026-09",
+      "inventory": [],
+      "accountType": "web_guest",
+      "bonusClaims": [],
+      "monthlyFarm": 0,
+      "pendingCash": 0,
+      "referralCash": 0,
+      "reservedCash": 0,
+      "lastAccruedAt": "2026-09-20T18:57:07.219Z",
+      "temporaryBait": 0,
+      "temporaryCash": 0,
+      "temporaryFish": 0,
+      "referralCounts": [
+        0,
+        0,
+        0
+      ],
+      "referralEarnings": [
+        0,
+        0,
+        0
+      ],
+      "temporaryBaitByMap": {},
+      "temporaryCylinders": 0
+    },
+    "web:c32d15ddddef46129fdb3285893959da": {
+      "id": "web:c32d15ddddef46129fdb3285893959da",
+      "bait": 0,
+      "cash": 0,
+      "fish": 0,
+      "name": "Visitante",
+      "casts": 0,
+      "missions": [],
+      "baitByMap": {},
+      "bonusBait": {},
+      "cylinders": 0,
+      "farmMonth": "2026-09",
+      "inventory": [],
+      "accountType": "web_guest",
+      "bonusClaims": [],
+      "monthlyFarm": 0,
+      "pendingCash": 0,
+      "referralCash": 0,
+      "reservedCash": 0,
+      "lastAccruedAt": "2026-09-20T18:57:07.219Z",
+      "temporaryBait": 0,
+      "temporaryCash": 0,
+      "temporaryFish": 0,
+      "referralCounts": [
+        0,
+        0,
+        0
+      ],
+      "referralEarnings": [
+        0,
+        0,
+        0
+      ],
+      "temporaryBaitByMap": {},
+      "temporaryCylinders": 0
+    },
+    "web:d039c666611c420aa8e86af9b8f844f6": {
+      "id": "web:d039c666611c420aa8e86af9b8f844f6",
+      "bait": 0,
+      "cash": 0,
+      "fish": 0,
+      "name": "Visitante",
+      "casts": 0,
+      "missions": [],
+      "baitByMap": {},
+      "bonusBait": {},
+      "cylinders": 0,
+      "farmMonth": "2026-09",
+      "inventory": [],
+      "accountType": "web_guest",
+      "bonusClaims": [],
+      "monthlyFarm": 0,
+      "pendingCash": 0,
+      "referralCash": 0,
+      "reservedCash": 0,
+      "lastAccruedAt": "2026-09-20T18:57:07.220Z",
+      "temporaryBait": 0,
+      "temporaryCash": 0,
+      "temporaryFish": 0,
+      "referralCounts": [
+        0,
+        0,
+        0
+      ],
+      "referralEarnings": [
+        0,
+        0,
+        0
+      ],
+      "temporaryBaitByMap": {},
+      "temporaryCylinders": 0
+    },
+    "web:d423231639cf4783853db890ad56e175": {
+      "id": "web:d423231639cf4783853db890ad56e175",
+      "bait": 0,
+      "cash": 0,
+      "fish": 0,
+      "name": "Visitante",
+      "casts": 0,
+      "missions": [],
+      "baitByMap": {},
+      "bonusBait": {},
+      "cylinders": 0,
+      "farmMonth": "2026-09",
+      "inventory": [],
+      "accountType": "web_guest",
+      "bonusClaims": [],
+      "monthlyFarm": 0,
+      "pendingCash": 0,
+      "referralCash": 0,
+      "reservedCash": 0,
+      "lastAccruedAt": "2026-09-20T18:57:07.220Z",
+      "temporaryBait": 0,
+      "temporaryCash": 0,
+      "temporaryFish": 0,
+      "referralCounts": [
+        0,
+        0,
+        0
+      ],
+      "referralEarnings": [
+        0,
+        0,
+        0
+      ],
+      "temporaryBaitByMap": {},
+      "temporaryCylinders": 0
+    },
+    "web:d966555e28b242319164c73924a55ea6": {
+      "id": "web:d966555e28b242319164c73924a55ea6",
+      "bait": 0,
+      "cash": 0,
+      "fish": 0,
+      "name": "Visitante",
+      "casts": 0,
+      "missions": [],
+      "baitByMap": {},
+      "bonusBait": {},
+      "cylinders": 0,
+      "farmMonth": "2026-09",
+      "inventory": [],
+      "accountType": "web_guest",
+      "bonusClaims": [],
+      "monthlyFarm": 0,
+      "pendingCash": 0,
+      "referralCash": 0,
+      "reservedCash": 0,
+      "lastAccruedAt": "2026-09-20T18:57:07.220Z",
+      "temporaryBait": 0,
+      "temporaryCash": 0,
+      "temporaryFish": 0,
+      "referralCounts": [
+        0,
+        0,
+        0
+      ],
+      "referralEarnings": [
+        0,
+        0,
+        0
+      ],
+      "temporaryBaitByMap": {},
+      "temporaryCylinders": 0
+    },
+    "web:d9b90a1c488c47dea04e7234d7425954": {
+      "id": "web:d9b90a1c488c47dea04e7234d7425954",
+      "bait": 0,
+      "cash": 0,
+      "fish": 0,
+      "name": "Visitante",
+      "casts": 0,
+      "missions": [],
+      "baitByMap": {},
+      "bonusBait": {},
+      "cylinders": 0,
+      "farmMonth": "2026-09",
+      "inventory": [],
+      "accountType": "web_guest",
+      "bonusClaims": [],
+      "monthlyFarm": 0,
+      "pendingCash": 0,
+      "referralCash": 0,
+      "reservedCash": 0,
+      "lastAccruedAt": "2026-09-20T18:57:07.220Z",
+      "temporaryBait": 0,
+      "temporaryCash": 0,
+      "temporaryFish": 0,
+      "referralCounts": [
+        0,
+        0,
+        0
+      ],
+      "referralEarnings": [
+        0,
+        0,
+        0
+      ],
+      "temporaryBaitByMap": {},
+      "temporaryCylinders": 0
+    },
+    "web:e0d1d0ecf98549c48e333ed2103520f0": {
+      "id": "web:e0d1d0ecf98549c48e333ed2103520f0",
+      "bait": 0,
+      "cash": 0,
+      "fish": 0,
+      "name": "Visitante",
+      "casts": 0,
+      "missions": [],
+      "baitByMap": {},
+      "bonusBait": {},
+      "cylinders": 0,
+      "farmMonth": "2026-09",
+      "inventory": [],
+      "accountType": "web_guest",
+      "bonusClaims": [],
+      "monthlyFarm": 0,
+      "pendingCash": 0,
+      "referralCash": 0,
+      "reservedCash": 0,
+      "lastAccruedAt": "2026-09-20T18:57:07.220Z",
+      "temporaryBait": 0,
+      "temporaryCash": 0,
+      "temporaryFish": 0,
+      "referralCounts": [
+        0,
+        0,
+        0
+      ],
+      "referralEarnings": [
+        0,
+        0,
+        0
+      ],
+      "temporaryBaitByMap": {},
+      "temporaryCylinders": 0
+    },
+    "web:e4c02484ae934527ae74173ee6f30e97": {
+      "id": "web:e4c02484ae934527ae74173ee6f30e97",
+      "bait": 0,
+      "cash": 0,
+      "fish": 0,
+      "name": "Visitante",
+      "casts": 0,
+      "missions": [],
+      "baitByMap": {},
+      "bonusBait": {},
+      "cylinders": 0,
+      "farmMonth": "2026-09",
+      "inventory": [],
+      "accountType": "web_guest",
+      "bonusClaims": [],
+      "monthlyFarm": 0,
+      "pendingCash": 0,
+      "referralCash": 0,
+      "reservedCash": 0,
+      "lastAccruedAt": "2026-09-20T18:57:07.220Z",
+      "temporaryBait": 0,
+      "temporaryCash": 0,
+      "temporaryFish": 0,
+      "referralCounts": [
+        0,
+        0,
+        0
+      ],
+      "referralEarnings": [
+        0,
+        0,
+        0
+      ],
+      "temporaryBaitByMap": {},
+      "temporaryCylinders": 0
+    },
+    "web:ebf7b7ad8cc34b66a9ca1f032baffa23": {
+      "id": "web:ebf7b7ad8cc34b66a9ca1f032baffa23",
+      "bait": 0,
+      "cash": 0,
+      "fish": 0,
+      "name": "Visitante",
+      "casts": 0,
+      "missions": [],
+      "baitByMap": {},
+      "bonusBait": {},
+      "cylinders": 0,
+      "farmMonth": "2026-09",
+      "inventory": [],
+      "accountType": "web_guest",
+      "bonusClaims": [],
+      "monthlyFarm": 0,
+      "pendingCash": 0,
+      "referralCash": 0,
+      "reservedCash": 0,
+      "lastAccruedAt": "2026-09-20T18:57:07.220Z",
+      "temporaryBait": 0,
+      "temporaryCash": 0,
+      "temporaryFish": 0,
+      "referralCounts": [
+        0,
+        0,
+        0
+      ],
+      "referralEarnings": [
+        0,
+        0,
+        0
+      ],
+      "temporaryBaitByMap": {},
+      "temporaryCylinders": 0
+    },
+    "web:ec512e2b10b0489e92976b094208d130": {
+      "id": "web:ec512e2b10b0489e92976b094208d130",
+      "bait": 0,
+      "cash": 0,
+      "fish": 0,
+      "name": "Visitante",
+      "casts": 0,
+      "missions": [],
+      "baitByMap": {},
+      "bonusBait": {},
+      "cylinders": 0,
+      "farmMonth": "2026-09",
+      "inventory": [],
+      "accountType": "web_guest",
+      "bonusClaims": [],
+      "monthlyFarm": 0,
+      "pendingCash": 0,
+      "referralCash": 0,
+      "reservedCash": 0,
+      "lastAccruedAt": "2026-09-20T18:57:07.220Z",
+      "temporaryBait": 0,
+      "temporaryCash": 0,
+      "temporaryFish": 0,
+      "referralCounts": [
+        0,
+        0,
+        0
+      ],
+      "referralEarnings": [
+        0,
+        0,
+        0
+      ],
+      "temporaryBaitByMap": {},
+      "temporaryCylinders": 0
+    },
+    "web:f604cc2a8620401db4f9a2cb47dc0ecb": {
+      "id": "web:f604cc2a8620401db4f9a2cb47dc0ecb",
+      "bait": 0,
+      "cash": 0,
+      "fish": 100,
+      "name": "Visitante",
+      "casts": 0,
+      "missions": [
+        "daily-login:2026-09-19"
+      ],
+      "baitByMap": {},
+      "bonusBait": {},
+      "cylinders": 0,
+      "farmMonth": "2026-09",
+      "inventory": [],
+      "accountType": "web_guest",
+      "bonusClaims": [],
+      "monthlyFarm": 0,
+      "pendingCash": 0,
+      "referralCash": 0,
+      "reservedCash": 0,
+      "lastAccruedAt": "2026-09-20T18:57:07.220Z",
+      "temporaryBait": 0,
+      "temporaryCash": 0,
+      "temporaryFish": 0,
+      "referralCounts": [
+        0,
+        0,
+        0
+      ],
+      "referralEarnings": [
+        0,
+        0,
+        0
+      ],
+      "temporaryBaitByMap": {},
+      "temporaryCylinders": 0
+    },
+    "web:f74f1acf3b8246e7b8e29e911bc014e4": {
+      "id": "web:f74f1acf3b8246e7b8e29e911bc014e4",
+      "bait": 0,
+      "cash": 0,
+      "fish": 0,
+      "name": "Visitante",
+      "casts": 0,
+      "missions": [],
+      "baitByMap": {},
+      "bonusBait": {},
+      "cylinders": 0,
+      "farmMonth": "2026-09",
+      "inventory": [],
+      "accountType": "web_guest",
+      "bonusClaims": [],
+      "monthlyFarm": 0,
+      "pendingCash": 0,
+      "referralCash": 0,
+      "reservedCash": 0,
+      "lastAccruedAt": "2026-09-20T18:57:07.220Z",
+      "temporaryBait": 0,
+      "temporaryCash": 0,
+      "temporaryFish": 0,
+      "referralCounts": [
+        0,
+        0,
+        0
+      ],
+      "referralEarnings": [
+        0,
+        0,
+        0
+      ],
+      "temporaryBaitByMap": {},
+      "temporaryCylinders": 0
+    },
+    "web:0b739ff954594ec49a042bb1df268582": {
+      "id": "web:0b739ff954594ec49a042bb1df268582",
+      "name": "Visitante",
+      "accountType": "web_guest",
+      "fish": 0,
+      "cash": 0,
+      "pendingCash": 0,
+      "reservedCash": 0,
+      "casts": 0,
+      "inventory": [],
+      "missions": [],
+      "referralCash": 0,
+      "referralCounts": [
+        0,
+        0,
+        0
+      ],
+      "referralEarnings": [
+        0,
+        0,
+        0
+      ],
+      "monthlyFarm": 0,
+      "farmMonth": "2026-09",
+      "lastAccruedAt": "2026-09-20T18:57:07.220Z",
+      "bait": 0,
+      "bonusBait": {},
+      "bonusClaims": [],
+      "cylinders": 0
+    },
+    "web:35635b99b9ba4fa091de885ed5f1fd05": {
+      "id": "web:35635b99b9ba4fa091de885ed5f1fd05",
+      "name": "Visitante",
+      "accountType": "web_guest",
+      "fish": 0,
+      "cash": 0,
+      "pendingCash": 0,
+      "reservedCash": 0,
+      "casts": 0,
+      "inventory": [],
+      "missions": [],
+      "referralCash": 0,
+      "referralCounts": [
+        0,
+        0,
+        0
+      ],
+      "referralEarnings": [
+        0,
+        0,
+        0
+      ],
+      "monthlyFarm": 0,
+      "farmMonth": "2026-09",
+      "lastAccruedAt": "2026-09-20T18:57:07.220Z",
+      "bait": 0,
+      "bonusBait": {},
+      "bonusClaims": [],
+      "cylinders": 0
+    },
+    "web:d1114ac214704b25811618d0726e97f4": {
+      "id": "web:d1114ac214704b25811618d0726e97f4",
+      "name": "Visitante",
+      "accountType": "web_guest",
+      "fish": 0,
+      "cash": 0,
+      "pendingCash": 0,
+      "reservedCash": 0,
+      "casts": 0,
+      "inventory": [],
+      "missions": [],
+      "referralCash": 0,
+      "referralCounts": [
+        0,
+        0,
+        0
+      ],
+      "referralEarnings": [
+        0,
+        0,
+        0
+      ],
+      "monthlyFarm": 0,
+      "farmMonth": "2026-09",
+      "lastAccruedAt": "2026-09-20T18:57:07.220Z",
+      "bait": 0,
+      "bonusBait": {},
+      "bonusClaims": [],
+      "cylinders": 0
+    },
+    "web:668419ac7cac43cfa4eb0f1cf1d2997a": {
+      "id": "web:668419ac7cac43cfa4eb0f1cf1d2997a",
+      "name": "Visitante",
+      "accountType": "web_guest",
+      "fish": 0,
+      "cash": 0,
+      "pendingCash": 0,
+      "reservedCash": 0,
+      "casts": 0,
+      "inventory": [],
+      "missions": [],
+      "referralCash": 0,
+      "referralCounts": [
+        0,
+        0,
+        0
+      ],
+      "referralEarnings": [
+        0,
+        0,
+        0
+      ],
+      "monthlyFarm": 0,
+      "farmMonth": "2026-09",
+      "lastAccruedAt": "2026-09-20T18:57:07.220Z",
+      "bait": 0,
+      "bonusBait": {},
+      "bonusClaims": [],
+      "cylinders": 0
+    },
+    "web:6894eeb20f1a4718abb2a81b3fa796a5": {
+      "id": "web:6894eeb20f1a4718abb2a81b3fa796a5",
+      "name": "Visitante",
+      "accountType": "web_guest",
+      "fish": 0,
+      "cash": 0,
+      "pendingCash": 0,
+      "reservedCash": 0,
+      "casts": 0,
+      "inventory": [],
+      "missions": [],
+      "referralCash": 0,
+      "referralCounts": [
+        0,
+        0,
+        0
+      ],
+      "referralEarnings": [
+        0,
+        0,
+        0
+      ],
+      "monthlyFarm": 0,
+      "farmMonth": "2026-09",
+      "lastAccruedAt": "2026-09-20T18:58:04.024Z",
+      "bait": 0,
+      "bonusBait": {},
+      "bonusClaims": [],
+      "cylinders": 0
+    }
+  },
+  "tonDeposits": [
+    {
+      "id": "6674cf3d-b354-4b46-9a78-77fa417ebc05",
+      "status": "completed",
+      "txHash": "NokVKvw5/4B5xEYEF9Xu8WpvSBTZ8zJPgR57X3lKE60=",
+      "comment": "PixelFish:6674cf3d-b354",
+      "network": "mainnet",
+      "playerId": "tg:8005712857",
+      "createdAt": "2026-09-19T04:27:01.237Z",
+      "fishAmount": 13000,
+      "relayStatus": "disabled",
+      "submittedAt": "2026-09-19T04:29:11.949Z",
+      "amountNanoTon": "1000000000",
+      "walletProofHash": "8714eb9b3b2f934f761b23d8342f75f61830c02d90c422f354c299ef652cc6b7"
+    }
+  ],
+  "withdrawals": [
+    {
+      "id": "3850650b-8c79-474d-82fe-0d2b65889652",
+      "cash": 20000,
+      "asset": "TON",
+      "status": "confirmed_manual",
+      "tonUsd": 1.6,
+      "txHash": "7Luxn+172dbHZfVdLW7iGBvmXcZjzds3Ql7psxw9KRo=",
+      "feeCash": 0,
+      "netCash": 20000,
+      "playerId": "tg:8005712857",
+      "quotedAt": "2026-09-19T01:57:30.943Z",
+      "createdAt": "2026-09-19T01:57:30.943Z",
+      "tonAmount": 1.25,
+      "usdAmount": 2,
+      "reviewedAt": "2026-09-19T02:21:33.049Z",
+      "destination": "UQBiJk2cKcukcqWNleULMt2l-YhAJAdIT9FBTACDLTX6Ia9H"
+    },
+    {
+      "id": "ecf0b49e-ac05-4542-a464-f89242a6e14f",
+      "cash": 15600,
+      "asset": "TON",
+      "status": "confirmed_manual",
+      "tonUsd": 1.6,
+      "txHash": "92ee0dd22ac282c812528578d7e2751508ce01c257d3633c7984b5ed441fc848",
+      "feeCash": 780,
+      "netCash": 14820,
+      "playerId": "tg:8005712857",
+      "quotedAt": "2026-09-19T04:30:38.591Z",
+      "createdAt": "2026-09-19T04:30:38.592Z",
+      "tonAmount": 0.92624999,
+      "usdAmount": 1.482,
+      "reviewedAt": "2026-09-19T04:40:19.408Z",
+      "destination": "UQBiJk2cKcukcqWNleULMt2l-YhAJAdIT9FBTACDLTX6Ia9H"
+    }
+  ],
+  "seasonAwards": [],
+  "marketListings": [
+    {
+      "id": "176a81ad-5747-4332-ac33-66b66e06566f",
+      "fish": {
+        "id": "22016971-3ed1-4ea0-8a4f-4d0d7ef5596e",
+        "name": "Peixe-vela",
+        "rarity": "Raro",
+        "dailyCash": 325,
+        "temporaryUntil": "2026-09-26T17:23:43.490Z"
+      },
+      "price": 100,
+      "status": "open",
+      "sellerId": "tg:8005712857",
+      "createdAt": "2026-09-19T21:50:36.719Z"
+    }
+  ]
+}
