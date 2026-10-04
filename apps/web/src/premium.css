@@ -395,3 +395,19 @@ input:focus { border-color: var(--xp-gold) !important; outline: none !important;
 ::-webkit-scrollbar { width: 3px; }
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background: var(--xp-border); border-radius: 4px; }
+
+/* ── Dock Logo ──────────────────────────────────────────── */
+.dock-logo {
+  position: fixed !important;
+  bottom: max(6px, env(safe-area-inset-bottom, 6px)) !important;
+  left: 0 !important;
+  right: 0 !important;
+  text-align: center !important;
+  font-family: monospace !important;
+  color: rgba(255, 255, 255, 0.2) !important;
+  font-size: 10px !important;
+  letter-spacing: 4px !important;
+  pointer-events: none !important;
+  z-index: 50 !important;
+}
+
