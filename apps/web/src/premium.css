@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
 
-/* --- PREMIUM XP INVESTIMENTOS STYLE OVERRIDE --- */
-
 :root {
   /* XP Platinum/Dark Palette */
   --xp-bg: #0d0f12;
@@ -28,17 +26,22 @@ body, button, input, select, * {
   box-shadow: none !important;
 }
 
+body, .reef-bg, .pool-home, .app-shell {
+  background-image: none !important;
+}
+
 body {
   background: var(--xp-bg) !important;
   color: var(--xp-text) !important;
 }
 
-/* Base layouts */
+/* Background gradient override */
 .reef-bg {
-  background: radial-gradient(circle at 50% 0%, #383c48 0%, var(--xp-bg) 80%) !important;
+  background: radial-gradient(circle at 50% 30%, #2a2e38 0%, var(--xp-bg) 80%) !important;
   background-image: none !important;
 }
 
+/* App Shell bounds */
 .app-shell {
   padding-top: 10px !important;
   padding-bottom: calc(env(safe-area-inset-bottom, 34px) + 90px) !important;
@@ -51,70 +54,103 @@ body {
   box-shadow: 0 10px 40px rgba(0,0,0,0.6) !important;
 }
 
-/* Status Bar */
+/* Top Status Bar */
 .status {
   background: var(--xp-surface) !important;
-  border: 1px solid var(--xp-border) !important;
+  border: 1px solid var(--xp-gold) !important;
   border-radius: 12px !important;
   color: var(--xp-text) !important;
-  font-weight: 500 !important;
+  font-weight: 700 !important;
+  font-size: 14px !important;
   justify-content: space-between !important;
-  padding: 12px 20px !important;
+  padding: 16px 20px !important;
 }
 .status i {
   border-left: 1px solid var(--xp-border) !important;
 }
 
-/* Buttons */
+/* Buttons Default */
 button {
   background: var(--xp-gold) !important;
   color: #000 !important;
   border: none !important;
   border-radius: 8px !important;
-  font-weight: 600 !important;
+  font-weight: 700 !important;
   text-transform: uppercase !important;
   letter-spacing: 0.5px !important;
   padding: 12px 16px !important;
   transition: all 0.2s ease !important;
-  box-shadow: 0 4px 12px rgba(255, 194, 0, 0.15) !important;
 }
 button:active {
   transform: translateY(2px) !important;
-  box-shadow: none !important;
 }
 button.blue, .blue, .wide.blue {
   background: var(--xp-surface-hover) !important;
   color: var(--xp-text) !important;
   border: 1px solid var(--xp-border) !important;
-  box-shadow: none !important;
 }
 button.red {
   background: var(--xp-red) !important;
   color: #fff !important;
 }
 
-/* Dock/Bottom Navigation */
+/* Dock/Bottom Navigation Bar */
 .dock {
   background: var(--xp-surface) !important;
   border: 1px solid var(--xp-border) !important;
   border-bottom: none !important;
   border-radius: 24px 24px 0 0 !important;
-  padding: 16px 10px calc(env(safe-area-inset-bottom, 34px) + 30px) !important;
+  height: auto !important;
+  min-height: auto !important;
+  padding: 16px 10px calc(env(safe-area-inset-bottom, 34px) + 20px) !important;
   backdrop-filter: blur(10px) !important;
-  box-shadow: 0 -10px 40px rgba(0,0,0,0.5) !important;
+  z-index: 100 !important;
 }
 .dock button {
   background: transparent !important;
   color: var(--xp-text-muted) !important;
-  box-shadow: none !important;
-  font-weight: 500 !important;
+  font-weight: 600 !important;
 }
 .dock .current {
   color: var(--xp-gold) !important;
 }
 .dock em {
   font-size: 24px !important;
-  margin-bottom: 4px !important;
+  margin-bottom: 6px !important;
+}
+
+/* Pool Footer (Recolher Cash) */
+.pool-footer {
+  background: var(--xp-surface-hover) !important;
+  border: 1px solid var(--xp-border) !important;
+  border-radius: 16px !important;
+  color: var(--xp-text) !important;
+  bottom: calc(env(safe-area-inset-bottom, 34px) + 100px) !important; /* Move above dock */
+  z-index: 90 !important;
+  padding: 16px !important;
+  height: auto !important;
+  min-height: auto !important;
+}
+.pool-footer b { color: var(--xp-gold) !important; font-size: 16px !important; }
+.pool-open {
+  background: var(--xp-gold) !important;
+  color: #000 !important;
+  border: none !important;
+  font-weight: 600 !important;
+}
+
+/* Side Buttons (Meu Aquario & Oficina) */
+.pool-aquarium-toggle {
+  bottom: calc(env(safe-area-inset-bottom, 34px) + 270px) !important;
+  background: var(--xp-surface) !important;
+  border: 1px solid var(--xp-gold) !important;
+  border-radius: 12px !important;
+}
+.pool-tools-toggle {
+  bottom: calc(env(safe-area-inset-bottom, 34px) + 190px) !important;
+  background: var(--xp-surface) !important;
+  border: 1px solid var(--xp-gold-dark) !important;
+  border-radius: 12px !important;
 }
 
 /* Cards & Modals */
@@ -122,7 +158,6 @@ button.red {
   background: var(--xp-surface-hover) !important;
   border: 1px solid var(--xp-border) !important;
   border-radius: 12px !important;
-  box-shadow: none !important;
   color: var(--xp-text) !important;
 }
 
@@ -156,84 +191,18 @@ input:focus {
   border-color: var(--xp-gold) !important;
 }
 
-/* Wallet */
-.wallet-sums b {
-  background: var(--xp-surface-hover) !important;
-  border: 1px solid var(--xp-border) !important;
-  color: var(--xp-text) !important;
-  font-weight: 700 !important;
-  font-size: 20px !important;
-}
-.wallet-sums b + b {
-  color: var(--xp-green) !important;
-}
-.wallet-actions button {
-  background: var(--xp-surface-hover) !important;
-  border: 1px solid var(--xp-border) !important;
-  color: var(--xp-text) !important;
-}
-.wallet-actions button:nth-child(2) { color: var(--xp-green) !important; }
-
 /* Aquarium/Pool Override */
-.pool-home { margin-top: 10px !important; }
 .pool-gallery {
-  background: var(--xp-surface) !important;
-  border: 1px solid var(--xp-border) !important;
-  border-radius: 16px !important;
-  box-shadow: inset 0 0 40px rgba(0,0,0,0.8) !important;
-}
-.pool-gallery::before, .pool-gallery::after { display: none !important; }
-.pool-depth { display: none !important; }
-
-.pool-footer {
-  background: var(--xp-surface-hover) !important;
-  border: 1px solid var(--xp-border) !important;
-  border-radius: 16px !important;
-  color: var(--xp-text) !important;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.5) !important;
-  margin-bottom: calc(env(safe-area-inset-bottom, 34px) + 70px) !important;
-}
-.pool-footer b { color: var(--xp-gold) !important; font-size: 16px !important; }
-.pool-open {
-  background: var(--xp-gold) !important;
-  color: #000 !important;
+  background: transparent !important;
   border: none !important;
-  font-weight: 600 !important;
+  box-shadow: none !important;
 }
-
-/* Fish Assets in UI - Clean up backgrounds */
-.owned-list article {
-  background: var(--xp-surface-hover) !important;
-  border: 1px solid var(--xp-border) !important;
-}
-.fish-orb {
-  background: var(--xp-bg) !important;
-  border: 2px solid var(--xp-border) !important;
-}
-
-/* Catch Screen */
-.catch-overlay {
-  background: rgba(0, 0, 0, 0.9) !important;
-  backdrop-filter: blur(10px) !important;
-}
-.catch-card {
-  background: var(--xp-surface) !important;
-  border: 1px solid var(--xp-gold) !important;
-  border-radius: 16px !important;
-  color: var(--xp-text) !important;
-  box-shadow: 0 10px 40px rgba(255, 194, 0, 0.1) !important;
-}
-.catch-card::before { display: none !important; }
-.catch-fish {
-  border: 2px solid var(--xp-border) !important;
-  background: var(--xp-bg) !important;
-  box-shadow: 0 0 30px rgba(255, 194, 0, 0.15) !important;
-}
+.pool-gallery::before, .pool-gallery::after, .pool-depth { display: none !important; }
 
 /* Dialog & Overlay */
 .overlay, .page-layer {
-  background: rgba(0,0,0,0.7) !important;
-  backdrop-filter: blur(8px) !important;
+  background: rgba(0,0,0,0.8) !important;
+  backdrop-filter: blur(10px) !important;
 }
 .dialog {
   background: var(--xp-surface) !important;
@@ -243,67 +212,9 @@ input:focus {
 .dialog h2 { color: var(--xp-text) !important; }
 .x { color: var(--xp-text-muted) !important; }
 
-/* Angler Stage (Map) */
-.angler-stage {
-  background: var(--xp-surface) !important;
-  border: 1px solid var(--xp-border) !important;
-  text-shadow: none !important;
-  border-radius: 16px !important;
-}
-.angler-stage::after { display: none !important; }
-.map-strip { gap: 12px !important; }
-.map-art {
-  background: var(--xp-surface-hover) !important;
-  border: 1px solid var(--xp-border) !important;
-  border-radius: 12px !important;
-}
-.map-art.selected {
-  border-color: var(--xp-gold) !important;
-  box-shadow: 0 0 0 1px var(--xp-gold) !important;
-}
-.map-art span {
-  background: var(--xp-bg) !important;
-  color: var(--xp-text) !important;
-}
-
-/* Adjust texts */
-.label, .eyebrow { color: var(--xp-text-muted) !important; }
-.blue, .red { color: #fff !important; }
-
-/* Scrollbars */
-::-webkit-scrollbar {
-  width: 4px;
-}
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-::-webkit-scrollbar-thumb {
-  background: var(--xp-border);
-  border-radius: 4px;
-}
-
-/* Extras */
+/* Intro Screen */
 .intro {
-  background: var(--xp-darker) !important;
-}
-.home-scene {
-  background: var(--xp-surface) !important;
-  border: 1px solid var(--xp-border) !important;
-  border-radius: 16px !important;
-  box-shadow: none !important;
-}
-.garland {
-  background: var(--xp-gray) !important;
-  border: 1px solid var(--xp-border) !important;
-  border-top: none !important;
-  color: var(--xp-text) !important;
-  box-shadow: none !important;
-}
-.home-collect {
-  background: var(--xp-surface-hover) !important;
-  border: 1px solid var(--xp-border) !important;
-  box-shadow: none !important;
-  color: var(--xp-gold) !important;
+  background: var(--xp-bg) !important;
 }
 .intro-logo b { font-family: 'Outfit', sans-serif !important; letter-spacing: 0px !important; }
 
@@ -327,9 +238,12 @@ input:focus {
   display: none !important;
 }
 
+/* Custom Cash Icon */
 .inline-icon {
-  height: 1.2em !important;
-  vertical-align: middle !important;
+  height: 1.4em !important;
+  width: auto !important;
+  vertical-align: text-bottom !important;
   display: inline-block !important;
   border-radius: 2px !important;
+  margin-right: 4px !important;
 }
