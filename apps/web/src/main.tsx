@@ -234,15 +234,12 @@ function Intro({ onEnter }: { onEnter: () => void }) {
   return (
     <main className="intro-screen">
       <div className="reef-bg" />
-      <div className="intro-bg-diver">
-        <img src="/assets/diver.png" alt="Mergulhador" />
-      </div>
       <section className="intro-card">
         <small className="intro-eyebrow">PASSIVE EARN</small>
         <img
-          src="/assets/cash.jpg"
-          alt="Nota Pixel Fish"
-          className="intro-note"
+          src="/assets/diver.png"
+          alt="Mergulhador"
+          className="intro-mascot"
         />
         <h1 className="intro-title">
           PIXEL <span>FISH</span>
