@@ -1151,6 +1151,7 @@ function App() {
   if (!entered) return <Intro onEnter={() => setEntered(true)} />;
   return (
     <div className="app-shell">
+      <div style={{ position: "fixed", bottom: "120px", left: "10px", color: "var(--xp-cyan)", fontSize: "12px", zIndex: 9999, fontWeight: "bold" }}>v1.2</div>
       <div className="reef-bg" />
       <header className="status">
         <span>
