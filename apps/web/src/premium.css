@@ -1,266 +1,381 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
 
+/* ============================================================
+   PIXEL FISH — PREMIUM LAYOUT v4
+   Tema: XP Investimentos / Corretora Profissional
+   ============================================================ */
+
 :root {
-  /* XP Platinum/Dark Palette */
   --xp-bg: #0d0f12;
-  --xp-surface: #1a1c23;
-  --xp-surface-hover: #242730;
+  --xp-surface: #161920;
+  --xp-surface2: #1e2130;
   --xp-gold: #ffc200;
   --xp-gold-dark: #cc9b00;
-  --xp-text: #ffffff;
-  --xp-text-muted: #b0b3bf;
-  --xp-border: #323540;
+  --xp-silver: #c0c4d0;
+  --xp-text: #f0f2ff;
+  --xp-muted: #8a8fa8;
+  --xp-border: #2a2e40;
   --xp-green: #00d27a;
   --xp-red: #f33535;
-  --xp-blue: #0084ff;
-  
-  --pf-water-deep: var(--xp-bg);
-  --pf-water: var(--xp-surface);
-  --pf-text: var(--xp-text);
-  --pf-gold: var(--xp-gold);
+  --xp-dock-h: 72px; /* dock visible height */
+  --xp-footer-h: 76px; /* pool-footer height */
+  --xp-safe: env(safe-area-inset-bottom, 20px);
 }
 
-body, button, input, select, * {
+/* ── Typography ──────────────────────────────────────────── */
+*, *::before, *::after {
   font-family: 'Outfit', sans-serif !important;
   text-shadow: none !important;
-  box-shadow: none !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+body { color: var(--xp-text) !important; }
+h1, h2, h3 { font-weight: 700 !important; color: var(--xp-text) !important; }
+small { color: var(--xp-muted) !important; }
+.eyebrow {
+  color: var(--xp-muted) !important;
+  text-transform: uppercase !important;
+  letter-spacing: 2px !important;
+  font-size: 10px !important;
+  font-weight: 600 !important;
 }
 
-body {
-  color: var(--xp-text) !important;
-}
+/* ── App Shell: tela cheia ───────────────────────────────── */
+html, body, #root { height: 100% !important; overflow: hidden !important; }
 
-/* Background gradient override */
-.reef-bg {
-  background: radial-gradient(circle at 50% 30%, rgba(42,46,56,0.8) 0%, rgba(13,15,18,0.9) 80%) !important;
-}
-
-/* App Shell bounds */
 .app-shell {
-  padding-top: 10px !important;
-  padding-bottom: calc(env(safe-area-inset-bottom, 34px) + 90px) !important;
+  /* deixa o fundo do reef (ocean) aparecer atrás de tudo */
+  padding: 0 !important;
+  box-sizing: border-box !important;
 }
 
-.frame, .app-shell > .frame {
-  background: var(--xp-surface) !important;
-  border: 1px solid var(--xp-border) !important;
-  border-radius: 20px !important;
-  box-shadow: 0 10px 40px rgba(0,0,0,0.6) !important;
+/* ── Fundo oceano: semitransparente por cima da foto ─────── */
+.reef-bg {
+  background: linear-gradient(
+    180deg,
+    rgba(13,15,18,0.55) 0%,
+    rgba(13,15,18,0.20) 40%,
+    rgba(13,15,18,0.60) 100%
+  ) !important;
 }
 
-/* Top Status Bar */
+/* ── Status Bar (FISH / CASH) ────────────────────────────── */
 .status {
-  background: var(--xp-surface) !important;
-  border: 1px solid var(--xp-gold) !important;
-  border-radius: 12px !important;
+  background: rgba(22, 25, 32, 0.85) !important;
+  backdrop-filter: blur(16px) !important;
+  border: 1px solid var(--xp-border) !important;
+  border-top: none !important;
+  border-radius: 0 0 16px 16px !important;
   color: var(--xp-text) !important;
   font-weight: 700 !important;
   font-size: 14px !important;
+  padding: 14px 20px !important;
+  margin: 0 8px !important;
   justify-content: space-between !important;
-  padding: 16px 20px !important;
 }
-.status i {
-  border-left: 1px solid var(--xp-border) !important;
-}
+.status i { border-left: 1px solid var(--xp-border) !important; }
 
-/* Buttons Default */
+/* ── Botões padrão ───────────────────────────────────────── */
 button {
   background: var(--xp-gold) !important;
   color: #000 !important;
   border: none !important;
-  border-radius: 8px !important;
+  border-radius: 10px !important;
   font-weight: 700 !important;
   text-transform: uppercase !important;
   letter-spacing: 0.5px !important;
   padding: 12px 16px !important;
-  transition: all 0.2s ease !important;
+  transition: opacity 0.15s, transform 0.1s !important;
+  box-shadow: none !important;
 }
-button:active {
-  transform: translateY(2px) !important;
-}
-button.blue, .blue, .wide.blue {
-  background: var(--xp-surface-hover) !important;
+button:active { opacity: 0.8 !important; transform: scale(0.97) !important; }
+button.blue, .wide.blue {
+  background: var(--xp-surface2) !important;
   color: var(--xp-text) !important;
   border: 1px solid var(--xp-border) !important;
 }
-button.red {
-  background: var(--xp-red) !important;
-  color: #fff !important;
-}
+button.red { background: var(--xp-red) !important; color: #fff !important; }
 
-/* Dock/Bottom Navigation Bar */
-.app-shell .dock {
-  background: var(--xp-surface) !important;
-  border: 1px solid var(--xp-border) !important;
-  border-bottom: none !important;
-  border-radius: 24px 24px 0 0 !important;
+/* ── DOCK (barra de navegação) ───────────────────────────── */
+/*
+   A dock usa position:fixed;bottom:0 no styles.css original.
+   Aqui só sobrescrevemos visual + padding para safe area.
+*/
+.dock {
+  background: rgba(16, 18, 26, 0.96) !important;
+  backdrop-filter: blur(20px) !important;
+  border-top: 1px solid var(--xp-border) !important;
+  border-radius: 20px 20px 0 0 !important;
+  /* empurra o conteúdo acima da home indicator do iPhone */
+  padding-bottom: calc(var(--xp-safe) + 8px) !important;
+  padding-top: 10px !important;
+  /* z-index alto para ficar sempre acima */
+  z-index: 200 !important;
+  /* reset altura para o conteúdo determinar */
   height: auto !important;
   min-height: auto !important;
-  padding: 16px 10px calc(env(safe-area-inset-bottom, 34px) + 20px) !important;
-  backdrop-filter: blur(10px) !important;
-  z-index: 100 !important;
 }
-.app-shell .dock button {
+.dock button {
   background: transparent !important;
-  color: var(--xp-text-muted) !important;
+  color: var(--xp-muted) !important;
+  font-size: 9px !important;
   font-weight: 600 !important;
+  letter-spacing: 0.5px !important;
+  padding: 6px 4px !important;
+  border-radius: 10px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 4px !important;
+  transition: color 0.15s !important;
 }
-.app-shell .dock .current {
+.dock .current {
   color: var(--xp-gold) !important;
+  background: rgba(255,194,0,0.08) !important;
+  border-radius: 10px !important;
 }
-.app-shell .dock em {
-  font-size: 24px !important;
-  margin-bottom: 6px !important;
+.dock em {
+  font-size: 22px !important;
+  line-height: 1 !important;
+  margin: 0 !important;
 }
 
-/* Pool Footer (Recolher Cash) */
-.pool-home .pool-footer {
-  background: var(--xp-surface-hover) !important;
+/* ── Pool: galeria e posicionamento ─────────────────────── */
+.pool-home {
+  /* pool-home ocupa do status bar até o topo da dock         */
+  /* o styles.css calcula height:calc(100dvh - 79px) — ok    */
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.pool-gallery {
+  flex: 1 !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  /* remove imagem interna dos peixes decorativos */
+  min-height: 0 !important;
+}
+.pool-gallery::before, .pool-gallery::after, .pool-depth { display: none !important; }
+
+/* ── Pool Footer (Rendimento + Recolher) ────────────────── */
+/*
+   No styles.css é position:fixed; bottom: DOCK_HEIGHT.
+   Garantimos que fique acima da dock com folga.
+*/
+.pool-footer {
+  background: rgba(22, 25, 32, 0.92) !important;
+  backdrop-filter: blur(16px) !important;
   border: 1px solid var(--xp-border) !important;
-  border-radius: 16px !important;
-  color: var(--xp-text) !important;
-  bottom: calc(env(safe-area-inset-bottom, 34px) + 120px) !important;
-  z-index: 90 !important;
-  padding: 16px !important;
+  border-radius: 16px 16px 0 0 !important;
+  /* fixed: dock height + safe area */
+  bottom: calc(var(--xp-dock-h) + var(--xp-safe)) !important;
+  left: 0 !important;
+  right: 0 !important;
+  z-index: 110 !important;
+  padding: 14px 16px !important;
   height: auto !important;
   min-height: auto !important;
-  margin-bottom: 0 !important;
+  margin: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 12px !important;
 }
-.pool-home .pool-footer b { color: var(--xp-gold) !important; font-size: 16px !important; }
+.pool-footer b { color: var(--xp-gold) !important; font-size: 18px !important; font-weight: 800 !important; }
+.pool-footer small { font-size: 10px !important; }
+.pool-footer button {
+  background: var(--xp-gold) !important;
+  color: #000 !important;
+  font-weight: 800 !important;
+  font-size: 12px !important;
+  padding: 12px 18px !important;
+  border-radius: 10px !important;
+  white-space: nowrap !important;
+  flex-shrink: 0 !important;
+}
+.pool-footer button:disabled {
+  opacity: 0.4 !important;
+}
+
 .pool-open {
   background: var(--xp-gold) !important;
   color: #000 !important;
-  border: none !important;
-  font-weight: 600 !important;
+  font-weight: 700 !important;
 }
 
-/* Side Buttons (Meu Aquario & Oficina) */
-.pool-home .pool-aquarium-toggle {
-  bottom: calc(env(safe-area-inset-bottom, 34px) + 290px) !important;
-  background: var(--xp-surface) !important;
-  border: 1px solid var(--xp-gold) !important;
-  border-radius: 12px !important;
-  width: 70px !important;
-  height: 70px !important;
+/* ── Botões Laterais (Aquário / Oficina) ─────────────────── */
+/*
+   Ficam empilhados na esquerda, acima do pool-footer.
+   pool-footer height ≈ 60px; dock height ≈ 72px
+   → safe stack: bottom = dock + footer + 12px gap + (idx * 82px)
+*/
+.pool-aquarium-toggle,
+.pool-tools-toggle {
+  position: fixed !important;
+  left: 10px !important;
+  width: 68px !important;
+  height: 68px !important;
+  background: rgba(22, 25, 32, 0.92) !important;
+  backdrop-filter: blur(16px) !important;
+  border-radius: 14px !important;
+  border: 1px solid var(--xp-border) !important;
   display: flex !important;
   flex-direction: column !important;
-  justify-content: center !important;
   align-items: center !important;
-  font-size: 24px !important;
-}
-.pool-home .pool-tools-toggle {
-  bottom: calc(env(safe-area-inset-bottom, 34px) + 210px) !important;
-  background: var(--xp-surface) !important;
-  border: 1px solid var(--xp-gold-dark) !important;
-  border-radius: 12px !important;
-  width: 70px !important;
-  height: 70px !important;
-  display: flex !important;
-  flex-direction: column !important;
   justify-content: center !important;
-  align-items: center !important;
-  margin-bottom: 0 !important;
-  font-size: 24px !important;
+  gap: 4px !important;
+  padding: 0 !important;
+  z-index: 120 !important;
+  box-shadow: none !important;
 }
-.pool-home .pool-aquarium-toggle small,
-.pool-home .pool-tools-toggle small {
-  font-size: 10px !important;
-  font-weight: 600 !important;
-  color: #c0c0c0 !important; /* Prata */
-  margin-top: 4px !important;
+.pool-aquarium-toggle {
+  /* índice 1: acima do tools */
+  bottom: calc(var(--xp-dock-h) + var(--xp-safe) + 68px + 12px + 68px + 12px) !important;
+  border-color: var(--xp-gold) !important;
+}
+.pool-tools-toggle {
+  /* índice 0: logo acima do footer */
+  bottom: calc(var(--xp-dock-h) + var(--xp-safe) + 68px + 12px) !important;
+  border-color: var(--xp-gold-dark) !important;
+}
+.pool-aquarium-toggle span,
+.pool-tools-toggle span,
+.pool-aquarium-toggle em,
+.pool-tools-toggle em {
+  font-size: 26px !important;
+  line-height: 1 !important;
+}
+.pool-aquarium-toggle small,
+.pool-tools-toggle small {
+  font-size: 9px !important;
+  font-weight: 700 !important;
+  color: var(--xp-silver) !important;
+  letter-spacing: 0.3px !important;
+  text-align: center !important;
+  line-height: 1.2 !important;
 }
 
-/* Cards & Modals */
-.pack, .deposit-card, .history-list article, .rank, .ref, .exchange, .profile, .deposit-details, .payment-proof, .calculator-section, .mission-header, .mission-list article {
-  background: var(--xp-surface-hover) !important;
+/* ── Frames (modais internos) ────────────────────────────── */
+.frame {
+  background: var(--xp-surface) !important;
+  border: 1px solid var(--xp-border) !important;
+  border-radius: 20px !important;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.7) !important;
+}
+.close {
+  background: var(--xp-surface2) !important;
+  border: 1px solid var(--xp-border) !important;
+  border-radius: 50% !important;
+  color: var(--xp-muted) !important;
+  font-size: 16px !important;
+  width: 34px !important;
+  height: 34px !important;
+  display: grid !important;
+  place-items: center !important;
+  padding: 0 !important;
+}
+
+/* ── Cards (Ranking, Packs etc.) ────────────────────────── */
+.pack, .rank, .ref, .exchange, .profile, .history-list article, .mission-list article {
+  background: var(--xp-surface2) !important;
   border: 1px solid var(--xp-border) !important;
   border-radius: 12px !important;
   color: var(--xp-text) !important;
+  box-shadow: none !important;
 }
-
-.pack {
-  background: linear-gradient(145deg, #1e1f24 0%, #17181c 100%) !important;
-}
-.pack b { color: var(--xp-text) !important; font-weight: 600 !important; }
+.pack { background: linear-gradient(145deg, #1e2130 0%, #161920 100%) !important; }
+.pack b { color: var(--xp-text) !important; font-weight: 700 !important; }
 .pack span { color: var(--xp-gold) !important; font-weight: 700 !important; }
-.pack em { 
-  background: transparent !important; 
-  border: 1px solid var(--xp-gold) !important; 
-  color: var(--xp-gold) !important; 
-  border-radius: 4px !important; 
+.pack em {
+  background: transparent !important;
+  border: 1px solid var(--xp-gold) !important;
+  color: var(--xp-gold) !important;
+  border-radius: 6px !important;
 }
 
-/* Typography Overrides */
-.eyebrow { color: var(--xp-text-muted) !important; text-transform: uppercase; letter-spacing: 1px; font-weight: 600; }
-h1, h2, h3 { font-weight: 700 !important; color: var(--xp-text) !important; margin-bottom: 12px !important; }
-small { color: var(--xp-text-muted) !important; }
-
-/* Inputs */
+/* ── Inputs ─────────────────────────────────────────────── */
 input[type=number], input[type=text], select {
   background: var(--xp-bg) !important;
   border: 1px solid var(--xp-border) !important;
   color: var(--xp-text) !important;
-  border-radius: 8px !important;
+  border-radius: 10px !important;
   font-weight: 500 !important;
 }
-input:focus {
-  outline: none !important;
-  border-color: var(--xp-gold) !important;
-}
+input:focus { outline: none !important; border-color: var(--xp-gold) !important; }
 
-/* Aquarium/Pool Override */
-.pool-gallery {
-  background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
-}
-.pool-gallery::before, .pool-gallery::after, .pool-depth { display: none !important; }
-
-/* Dialog & Overlay */
+/* ── Overlay / Dialog ────────────────────────────────────── */
 .overlay, .page-layer {
-  background: rgba(0,0,0,0.8) !important;
-  backdrop-filter: blur(10px) !important;
+  background: rgba(5, 7, 13, 0.82) !important;
+  backdrop-filter: blur(14px) !important;
 }
 .dialog {
   background: var(--xp-surface) !important;
   border: 1px solid var(--xp-border) !important;
+  border-radius: 20px !important;
+  color: var(--xp-text) !important;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.8) !important;
+}
+.x { color: var(--xp-muted) !important; background: transparent !important; }
+
+/* ── Carteira ────────────────────────────────────────────── */
+.wallet-sums b {
+  background: var(--xp-surface2) !important;
+  border: 1px solid var(--xp-border) !important;
+  color: var(--xp-text) !important;
+  font-weight: 800 !important;
+  border-radius: 12px !important;
+}
+.wallet-actions button {
+  background: var(--xp-surface2) !important;
+  border: 1px solid var(--xp-border) !important;
   color: var(--xp-text) !important;
 }
-.dialog h2 { color: var(--xp-text) !important; }
-.x { color: var(--xp-text-muted) !important; }
 
-/* Intro Screen */
-.intro {
-  background: var(--xp-bg) !important;
-}
-.intro-logo b { font-family: 'Outfit', sans-serif !important; letter-spacing: 0px !important; }
-
-.intro-logo {
-  background: var(--xp-surface) !important;
+/* ── Mapa / Angler ───────────────────────────────────────── */
+.angler-stage {
+  background: var(--xp-surface2) !important;
   border: 1px solid var(--xp-border) !important;
-  box-shadow: 0 10px 40px rgba(0,0,0,0.8) !important;
-  padding: 30px 40px !important;
-  border-radius: 16px !important;
+  border-radius: 14px !important;
+}
+.map-art {
+  background: var(--xp-surface2) !important;
+  border: 1px solid var(--xp-border) !important;
+  border-radius: 12px !important;
+}
+.map-art.selected { border-color: var(--xp-gold) !important; }
+.map-art span { background: rgba(13,15,18,0.8) !important; color: var(--xp-text) !important; }
+
+/* ── Tela Intro ──────────────────────────────────────────── */
+.intro-logo {
+  background: rgba(16, 18, 26, 0.88) !important;
+  backdrop-filter: blur(20px) !important;
+  border: 1px solid var(--xp-border) !important;
+  border-radius: 20px !important;
+  padding: 32px 40px !important;
 }
 .intro-logo::before {
   content: 'PASSIVE EARN' !important;
+  display: block !important;
   color: var(--xp-gold) !important;
-  font-family: 'Outfit', sans-serif !important;
-  font-size: 14px !important;
-  letter-spacing: 4px !important;
-  text-transform: uppercase !important;
-  font-weight: 600 !important;
+  font-size: 12px !important;
+  letter-spacing: 5px !important;
+  font-weight: 700 !important;
+  margin-bottom: 8px !important;
 }
-.intro-fish, .intro::before {
-  display: none !important;
-}
+.intro-logo b { font-weight: 800 !important; letter-spacing: 0 !important; }
+.intro-fish { display: none !important; }
 
-/* Custom Cash Icon */
+/* ── Ícone Cash customizado ──────────────────────────────── */
 .inline-icon {
-  height: 1.4em !important;
+  height: 1.3em !important;
   width: auto !important;
   vertical-align: text-bottom !important;
   display: inline-block !important;
-  border-radius: 2px !important;
-  margin-right: 4px !important;
+  border-radius: 3px !important;
+  margin-right: 3px !important;
 }
+
+/* ── Scrollbars ──────────────────────────────────────────── */
+::-webkit-scrollbar { width: 3px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--xp-border); border-radius: 4px; }
