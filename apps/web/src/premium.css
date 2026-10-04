@@ -95,7 +95,7 @@ button.red {
 }
 
 /* Dock/Bottom Navigation Bar */
-.dock {
+.app-shell .dock {
   background: var(--xp-surface) !important;
   border: 1px solid var(--xp-border) !important;
   border-bottom: none !important;
@@ -106,32 +106,33 @@ button.red {
   backdrop-filter: blur(10px) !important;
   z-index: 100 !important;
 }
-.dock button {
+.app-shell .dock button {
   background: transparent !important;
   color: var(--xp-text-muted) !important;
   font-weight: 600 !important;
 }
-.dock .current {
+.app-shell .dock .current {
   color: var(--xp-gold) !important;
 }
-.dock em {
+.app-shell .dock em {
   font-size: 24px !important;
   margin-bottom: 6px !important;
 }
 
 /* Pool Footer (Recolher Cash) */
-.pool-footer {
+.pool-home .pool-footer {
   background: var(--xp-surface-hover) !important;
   border: 1px solid var(--xp-border) !important;
   border-radius: 16px !important;
   color: var(--xp-text) !important;
-  bottom: calc(env(safe-area-inset-bottom, 34px) + 100px) !important; /* Move above dock */
+  bottom: calc(env(safe-area-inset-bottom, 34px) + 120px) !important;
   z-index: 90 !important;
   padding: 16px !important;
   height: auto !important;
   min-height: auto !important;
+  margin-bottom: 0 !important;
 }
-.pool-footer b { color: var(--xp-gold) !important; font-size: 16px !important; }
+.pool-home .pool-footer b { color: var(--xp-gold) !important; font-size: 16px !important; }
 .pool-open {
   background: var(--xp-gold) !important;
   color: #000 !important;
@@ -140,17 +141,30 @@ button.red {
 }
 
 /* Side Buttons (Meu Aquario & Oficina) */
-.pool-aquarium-toggle {
-  bottom: calc(env(safe-area-inset-bottom, 34px) + 270px) !important;
+.pool-home .pool-aquarium-toggle {
+  bottom: calc(env(safe-area-inset-bottom, 34px) + 260px) !important;
   background: var(--xp-surface) !important;
   border: 1px solid var(--xp-gold) !important;
   border-radius: 12px !important;
+  width: 70px !important;
+  height: 70px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
-.pool-tools-toggle {
-  bottom: calc(env(safe-area-inset-bottom, 34px) + 190px) !important;
+.pool-home .pool-tools-toggle {
+  bottom: calc(env(safe-area-inset-bottom, 34px) + 180px) !important;
   background: var(--xp-surface) !important;
   border: 1px solid var(--xp-gold-dark) !important;
   border-radius: 12px !important;
+  width: 70px !important;
+  height: 70px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin-bottom: 0 !important;
 }
 
 /* Cards & Modals */
