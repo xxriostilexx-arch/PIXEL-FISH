@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+/* --- PREMIUM XP INVESTIMENTOS STYLE OVERRIDE --- */
+
+:root {
+  /* XP Dark Palette */
+  --xp-bg: #0b0c10;
+  --xp-surface: #17181c;
+  --xp-surface-hover: #1e1f24;
+  --xp-gold: #ffc200;
+  --xp-gold-dark: #cc9b00;
+  --xp-text: #ffffff;
+  --xp-text-muted: #a0a0ab;
+  --xp-border: #292a2f;
+  --xp-green: #00d27a;
+  --xp-red: #f33535;
+  --xp-blue: #0084ff;
+  
+  --pf-water-deep: var(--xp-bg);
+  --pf-water: var(--xp-surface);
+  --pf-text: var(--xp-text);
+  --pf-gold: var(--xp-gold);
+}
+
+body, button, input, select, * {
+  font-family: 'Outfit', sans-serif !important;
+  text-shadow: none !important;
+  box-shadow: none !important;
+}
+
+body {
+  background: var(--xp-bg) !important;
+  color: var(--xp-text) !important;
+}
+
+/* Base layouts */
+.reef-bg {
+  background: radial-gradient(circle at 50% 0%, #1e1f24 0%, #0b0c10 70%) !important;
+  background-image: none !important;
+}
+
+.app-shell {
+  padding-top: 10px !important;
+}
+
+.frame, .app-shell > .frame {
+  background: var(--xp-surface) !important;
+  border: 1px solid var(--xp-border) !important;
+  border-radius: 20px !important;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.6) !important;
+}
+
+/* Status Bar */
+.status {
+  background: var(--xp-surface) !important;
+  border: 1px solid var(--xp-border) !important;
+  border-radius: 12px !important;
+  color: var(--xp-text) !important;
+  font-weight: 500 !important;
+  justify-content: space-between !important;
+  padding: 12px 20px !important;
+}
+.status i {
+  border-left: 1px solid var(--xp-border) !important;
+}
+
+/* Buttons */
+button {
+  background: var(--xp-gold) !important;
+  color: #000 !important;
+  border: none !important;
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+  padding: 12px 16px !important;
+  transition: all 0.2s ease !important;
+  box-shadow: 0 4px 12px rgba(255, 194, 0, 0.15) !important;
+}
+button:active {
+  transform: translateY(2px) !important;
+  box-shadow: none !important;
+}
+button.blue, .blue, .wide.blue {
+  background: var(--xp-surface-hover) !important;
+  color: var(--xp-text) !important;
+  border: 1px solid var(--xp-border) !important;
+  box-shadow: none !important;
+}
+button.red {
+  background: var(--xp-red) !important;
+  color: #fff !important;
+}
+
+/* Dock/Bottom Navigation */
+.dock {
+  background: var(--xp-surface) !important;
+  border: 1px solid var(--xp-border) !important;
+  border-bottom: none !important;
+  border-radius: 24px 24px 0 0 !important;
+  padding: 10px 10px 20px !important;
+  backdrop-filter: blur(10px) !important;
+  box-shadow: 0 -10px 40px rgba(0,0,0,0.5) !important;
+}
+.dock button {
+  background: transparent !important;
+  color: var(--xp-text-muted) !important;
+  box-shadow: none !important;
+  font-weight: 500 !important;
+}
+.dock .current {
+  color: var(--xp-gold) !important;
+}
+.dock em {
+  font-size: 24px !important;
+  margin-bottom: 4px !important;
+}
+
+/* Cards & Modals */
+.pack, .deposit-card, .history-list article, .rank, .ref, .exchange, .profile, .deposit-details, .payment-proof, .calculator-section, .mission-header, .mission-list article {
+  background: var(--xp-surface-hover) !important;
+  border: 1px solid var(--xp-border) !important;
+  border-radius: 12px !important;
+  box-shadow: none !important;
+  color: var(--xp-text) !important;
+}
+
+.pack {
+  background: linear-gradient(145deg, #1e1f24 0%, #17181c 100%) !important;
+}
+.pack b { color: var(--xp-text) !important; font-weight: 600 !important; }
+.pack span { color: var(--xp-gold) !important; font-weight: 700 !important; }
+.pack em { 
+  background: transparent !important; 
+  border: 1px solid var(--xp-gold) !important; 
+  color: var(--xp-gold) !important; 
+  border-radius: 4px !important; 
+}
+
+/* Typography Overrides */
+.eyebrow { color: var(--xp-text-muted) !important; text-transform: uppercase; letter-spacing: 1px; font-weight: 600; }
+h1, h2, h3 { font-weight: 700 !important; color: var(--xp-text) !important; margin-bottom: 12px !important; }
+small { color: var(--xp-text-muted) !important; }
+
+/* Inputs */
+input[type=number], input[type=text], select {
+  background: var(--xp-bg) !important;
+  border: 1px solid var(--xp-border) !important;
+  color: var(--xp-text) !important;
+  border-radius: 8px !important;
+  font-weight: 500 !important;
+}
+input:focus {
+  outline: none !important;
+  border-color: var(--xp-gold) !important;
+}
+
+/* Wallet */
+.wallet-sums b {
+  background: var(--xp-surface-hover) !important;
+  border: 1px solid var(--xp-border) !important;
+  color: var(--xp-text) !important;
+  font-weight: 700 !important;
+  font-size: 20px !important;
+}
+.wallet-sums b + b {
+  color: var(--xp-green) !important;
+}
+.wallet-actions button {
+  background: var(--xp-surface-hover) !important;
+  border: 1px solid var(--xp-border) !important;
+  color: var(--xp-text) !important;
+}
+.wallet-actions button:nth-child(2) { color: var(--xp-green) !important; }
+
+/* Aquarium/Pool Override */
+.pool-home { margin-top: 10px !important; }
+.pool-gallery {
+  background: var(--xp-surface) !important;
+  border: 1px solid var(--xp-border) !important;
+  border-radius: 16px !important;
+  box-shadow: inset 0 0 40px rgba(0,0,0,0.8) !important;
+}
+.pool-gallery::before, .pool-gallery::after { display: none !important; }
+.pool-depth { display: none !important; }
+
+.pool-footer {
+  background: var(--xp-surface-hover) !important;
+  border: 1px solid var(--xp-border) !important;
+  border-radius: 16px !important;
+  color: var(--xp-text) !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5) !important;
+}
+.pool-footer b { color: var(--xp-gold) !important; font-size: 16px !important; }
+.pool-open {
+  background: var(--xp-gold) !important;
+  color: #000 !important;
+  border: none !important;
+  font-weight: 600 !important;
+}
+
+/* Fish Assets in UI - Clean up backgrounds */
+.owned-list article {
+  background: var(--xp-surface-hover) !important;
+  border: 1px solid var(--xp-border) !important;
+}
+.fish-orb {
+  background: var(--xp-bg) !important;
+  border: 2px solid var(--xp-border) !important;
+}
+
+/* Catch Screen */
+.catch-overlay {
+  background: rgba(0, 0, 0, 0.9) !important;
+  backdrop-filter: blur(10px) !important;
+}
+.catch-card {
+  background: var(--xp-surface) !important;
+  border: 1px solid var(--xp-gold) !important;
+  border-radius: 16px !important;
+  color: var(--xp-text) !important;
+  box-shadow: 0 10px 40px rgba(255, 194, 0, 0.1) !important;
+}
+.catch-card::before { display: none !important; }
+.catch-fish {
+  border: 2px solid var(--xp-border) !important;
+  background: var(--xp-bg) !important;
+  box-shadow: 0 0 30px rgba(255, 194, 0, 0.15) !important;
+}
+
+/* Dialog & Overlay */
+.overlay, .page-layer {
+  background: rgba(0,0,0,0.7) !important;
+  backdrop-filter: blur(8px) !important;
+}
+.dialog {
+  background: var(--xp-surface) !important;
+  border: 1px solid var(--xp-border) !important;
+  color: var(--xp-text) !important;
+}
+.dialog h2 { color: var(--xp-text) !important; }
+.x { color: var(--xp-text-muted) !important; }
+
+/* Angler Stage (Map) */
+.angler-stage {
+  background: var(--xp-surface) !important;
+  border: 1px solid var(--xp-border) !important;
+  text-shadow: none !important;
+  border-radius: 16px !important;
+}
+.angler-stage::after { display: none !important; }
+.map-strip { gap: 12px !important; }
+.map-art {
+  background: var(--xp-surface-hover) !important;
+  border: 1px solid var(--xp-border) !important;
+  border-radius: 12px !important;
+}
+.map-art.selected {
+  border-color: var(--xp-gold) !important;
+  box-shadow: 0 0 0 1px var(--xp-gold) !important;
+}
+.map-art span {
+  background: var(--xp-bg) !important;
+  color: var(--xp-text) !important;
+}
+
+/* Adjust texts */
+.label, .eyebrow { color: var(--xp-text-muted) !important; }
+.blue, .red { color: #fff !important; }
+
+/* Scrollbars */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--xp-border);
+  border-radius: 4px;
+}
+
+/* Extras */
+.intro {
+  background: var(--xp-darker) !important;
+}
+.home-scene {
+  background: var(--xp-surface) !important;
+  border: 1px solid var(--xp-border) !important;
+  border-radius: 16px !important;
+  box-shadow: none !important;
+}
+.garland {
+  background: var(--xp-gray) !important;
+  border: 1px solid var(--xp-border) !important;
+  border-top: none !important;
+  color: var(--xp-text) !important;
+  box-shadow: none !important;
+}
+.home-collect {
+  background: var(--xp-surface-hover) !important;
+  border: 1px solid var(--xp-border) !important;
+  box-shadow: none !important;
+  color: var(--xp-gold) !important;
+}
+.intro-logo b { font-family: 'Outfit', sans-serif !important; letter-spacing: 0px !important; }

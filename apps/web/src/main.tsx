@@ -6,6 +6,7 @@ import { TonConnectUIProvider, useTonConnectUI, useTonAddress, useTonWallet } fr
 import { CHAIN } from '@tonconnect/protocol';
 import { beginCell } from '@ton/core';
 import './styles.css';
+import './premium.css';
 type R='Comum'|'Raro'|'Épico'|'Lendário'; type M={id:string;name:string;icon:string;cost:number;odds:[R,number][];fish:[string,R,string,number][]}; type OwnedFish={id:string;name:string;rarity:R;dailyCash:number;temporaryUntil?:string;asset?:string};
 const maps:M[]=[
  {id:'river',name:'Rio',icon:'🌲',cost:1300,odds:[['Comum',84],['Raro',15],['Épico',1]],fish:[['Siluro','Comum','42%',13],['Truta dourada','Comum','42%',13],['Barbo rubro','Raro','15%',16.25],['Piranha azul','Épico','1%',20]]},
